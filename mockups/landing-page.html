@@ -18,6 +18,10 @@
 	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
+	<style type="text/css">
+		.fluid-width-video-wrapper { margin-top: 20px; }
+	</style>
+
 	<!-- Document Title
 	============================================= -->
 	<title>Home - Magazine Layout | Canvas</title>
@@ -30,102 +34,29 @@
 	============================================= -->
 	<div id="wrapper" class="clearfix">
 
-		<!-- Top Bar
-		============================================= -->
-		<div id="top-bar">
-
-			<div class="container clearfix">
-
-				<div class="col_half nobottommargin">
-
-					<!-- Top Links
-					============================================= -->
-					<div class="top-links">
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="faqs.html">FAQs</a></li>
-							<li><a href="contact.html">Contact</a></li>
-							<li><a href="login-register.html">Login</a>
-								<div class="top-link-section">
-									<form id="top-login">
-										<div class="input-group" id="top-login-username">
-											<div class="input-group-prepend">
-												<div class="input-group-text"><i class="icon-user"></i></div>
-											</div>
-											<input type="email" class="form-control" placeholder="Email address" required="">
-										</div>
-										<div class="input-group" id="top-login-password">
-											<div class="input-group-prepend">
-												<div class="input-group-text"><i class="icon-key"></i></div>
-											</div>
-											<input type="password" class="form-control" placeholder="Password" required="">
-										</div>
-										<label class="checkbox">
-										  <input type="checkbox" value="remember-me"> Remember me
-										</label>
-										<button class="btn btn-danger btn-block" type="submit">Sign in</button>
-									</form>
-								</div>
-							</li>
-						</ul>
-					</div><!-- .top-links end -->
-
-				</div>
-
-				<div class="col_half fright col_last nobottommargin">
-
-					<!-- Top Social
-					============================================= -->
-					<div id="top-social">
-						<ul>
-							<li><a href="#" class="si-facebook"><span class="ts-icon"><i class="icon-facebook"></i></span><span class="ts-text">Facebook</span></a></li>
-							<li><a href="#" class="si-twitter"><span class="ts-icon"><i class="icon-twitter"></i></span><span class="ts-text">Twitter</span></a></li>
-							<li><a href="#" class="si-dribbble"><span class="ts-icon"><i class="icon-dribbble"></i></span><span class="ts-text">Dribbble</span></a></li>
-							<li><a href="#" class="si-github"><span class="ts-icon"><i class="icon-github-circled"></i></span><span class="ts-text">Github</span></a></li>
-							<li><a href="#" class="si-pinterest"><span class="ts-icon"><i class="icon-pinterest"></i></span><span class="ts-text">Pinterest</span></a></li>
-							<li><a href="#" class="si-instagram"><span class="ts-icon"><i class="icon-instagram2"></i></span><span class="ts-text">Instagram</span></a></li>
-							<li><a href="tel:+91.11.85412542" class="si-call"><span class="ts-icon"><i class="icon-call"></i></span><span class="ts-text">+91.11.85412542</span></a></li>
-							<li><a href="mailto:info@canvas.com" class="si-email3"><span class="ts-icon"><i class="icon-email3"></i></span><span class="ts-text">info@canvas.com</span></a></li>
-						</ul>
-					</div><!-- #top-social end -->
-
-				</div>
-
-			</div>
-
-		</div><!-- #top-bar end -->
-
 		<!-- Header
 		============================================= -->
-		<header id="header" class="sticky-style-2">
-
-			<div class="container clearfix">
-
-				<!-- Logo
-				============================================= -->
-				<div id="logo">
-					<a href="index.html" class="standard-logo" data-dark-logo="images/logo-dark.png"><img src="images/logo.png" alt="Canvas Logo"></a>
-					<a href="index.html" class="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img src="images/logo@2x.png" alt="Canvas Logo"></a>
-				</div><!-- #logo end -->
-
-				<div class="top-advert">
-					<img src="images/magazine/ad.jpg" alt="Ad">
-				</div>
-
-			</div>
+		<header id="header" class="full-header">
 
 			<div id="header-wrap">
 
-				<!-- Primary Navigation
-				============================================= -->
-				<nav id="primary-menu" class="style-2">
+				<div class="container clearfix">
 
-					<div class="container clearfix">
+					<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
 
-						<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+					<!-- Logo
+					============================================= -->
+					<div id="logo">
+						<a href="index.html" class="standard-logo" data-dark-logo="images/logo-dark.png"><img src="images/logo.png" alt="Canvas Logo"></a>
+						<a href="index.html" class="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img src="images/logo@2x.png" alt="Canvas Logo"></a>
+					</div><!-- #logo end -->
+
+					<!-- Primary Navigation
+					============================================= -->
+					<nav id="primary-menu">
 
 						<ul>
-							<li class="current"><a href="index.html"><div>Home</div></a>
+							<li><a href="index.html"><div>Home</div></a>
 								<ul>
 									<li><a href="index-corporate.html"><div>Home - Corporate</div></a>
 										<ul>
@@ -534,7 +465,7 @@
 									</ul>
 								</div>
 							</li>
-							<li class="mega-menu"><a href="#"><div>Blog</div></a>
+							<li class="current mega-menu"><a href="#"><div>Blog</div></a>
 								<div class="mega-menu-content style-2 clearfix">
 									<ul class="mega-menu-column col-lg-3">
 										<li class="mega-menu-title"><a href="#"><div>Default</div></a>
@@ -706,6 +637,43 @@
 							</li>
 						</ul>
 
+						<!-- Top Cart
+						============================================= -->
+						<div id="top-cart">
+							<a href="#" id="top-cart-trigger"><i class="icon-shopping-cart"></i><span>5</span></a>
+							<div class="top-cart-content">
+								<div class="top-cart-title">
+									<h4>Shopping Cart</h4>
+								</div>
+								<div class="top-cart-items">
+									<div class="top-cart-item clearfix">
+										<div class="top-cart-item-image">
+											<a href="#"><img src="images/shop/small/1.jpg" alt="Blue Round-Neck Tshirt" /></a>
+										</div>
+										<div class="top-cart-item-desc">
+											<a href="#">Blue Round-Neck Tshirt</a>
+											<span class="top-cart-item-price">$19.99</span>
+											<span class="top-cart-item-quantity">x 2</span>
+										</div>
+									</div>
+									<div class="top-cart-item clearfix">
+										<div class="top-cart-item-image">
+											<a href="#"><img src="images/shop/small/6.jpg" alt="Light Blue Denim Dress" /></a>
+										</div>
+										<div class="top-cart-item-desc">
+											<a href="#">Light Blue Denim Dress</a>
+											<span class="top-cart-item-price">$24.99</span>
+											<span class="top-cart-item-quantity">x 3</span>
+										</div>
+									</div>
+								</div>
+								<div class="top-cart-action clearfix">
+									<span class="fleft top-checkout-price">$114.95</span>
+									<button class="button button-3d button-small nomargin fright">View Cart</button>
+								</div>
+							</div>
+						</div><!-- #top-cart end -->
+
 						<!-- Top Search
 						============================================= -->
 						<div id="top-search">
@@ -715,9 +683,9 @@
 							</form>
 						</div><!-- #top-search end -->
 
-					</div>
+					</nav><!-- #primary-menu end -->
 
-				</nav><!-- #primary-menu end -->
+				</div>
 
 			</div>
 
@@ -749,10 +717,10 @@
 
 				<div class="container clearfix">
 
-					<div class="postcontent nobottommargin">
+					<div class="col_full nobottommargin">
 
 						<div class="col_three_fifth bottommargin-lg">
-							<div class="fslider flex-thumb-grid grid-6" data-speed="400" data-arrows="true" data-thumbs="true" data-easing="easeOutQuad">
+							<div class="fslider flex-thumb-grid grid-6" data-speed="400" data-arrows="true" data-thumbs="false" data-easing="easeOutQuad">
 								<div class="flexslider">
 									<div class="slider-wrap">
 										<div class="slide" data-thumb="images/magazine/thumb/1.jpg">
@@ -949,7 +917,7 @@
 						</div>
 
 						<div class="bottommargin-lg">
-							<img src="images/magazine/ad.jpg" alt="Ad" class="aligncenter notopmargin nobottommargin">
+							<!-- <img src="images/magazine/ad.jpg" alt="Ad" class="aligncenter notopmargin nobottommargin"> -->
 						</div>
 
 						<div class="col_full bottommargin-lg clearfix">
@@ -1411,7 +1379,7 @@
 
 					</div>
 
-					<div class="sidebar nobottommargin col_last">
+					<!-- <div class="sidebar nobottommargin col_last">
 
 						<div class="sidebar-widgets-wrap">
 
@@ -1441,11 +1409,11 @@
 								</div>
 							</div>
 
-							<div class="widget clearfix">
+							<div class="widget clearfix">-->
 
-								<img class="aligncenter" src="images/magazine/ad.png" alt="">
+								<!-- <img class="aligncenter" src="images/magazine/ad.png" alt=""> -->
 
-							</div>
+							<!-- </div>
 
 							<div class="widget widget_links clearfix">
 
@@ -1641,11 +1609,11 @@
 
 							</div>
 
-							<div class="widget clearfix">
+							<div class="widget clearfix"> -->
 
-								<img class="aligncenter" src="images/magazine/ad.png" alt="">
+								<!-- <img class="aligncenter" src="images/magazine/ad.png" alt=""> -->
 
-							</div>
+							<!--</div>
 
 							<div class="widget clearfix">
 								<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FEnvato&amp;width=240&amp;height=240&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=false&amp;show_border=true&amp;appId=499481203443583" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:240px; height:240px;" allowTransparency="true"></iframe>
@@ -1653,7 +1621,7 @@
 
 						</div>
 
-					</div>
+					</div> -->
 
 					<div class="clear"></div>
 
@@ -1779,7 +1747,7 @@
 					</div>
 
 
-					<img src="images/magazine/ad.jpg" alt="Ad" class="aligncenter topmargin-lg nobottommargin">
+					<!-- <img src="images/magazine/ad.jpg" alt="Ad" class="aligncenter topmargin-lg nobottommargin"> -->
 
 				</div>
 
