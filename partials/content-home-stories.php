@@ -2,7 +2,7 @@
 
 	<?php
 
-		$post_count = 0;
+		$post_count = 1;
 		$num_posts = -1;
 		if( is_front_page() ) $num_posts = 9;
 
@@ -15,7 +15,7 @@
 
 	?>
 
-		<div class="col_one_third <?php if( $post_count % 3 ) { echo 'col_last'; } ?>">
+		<div class="col_one_third <?php if( $post_count == 3 ) { echo 'col_last'; } ?>">
 			<div class="ipost clearfix">
 				<div class="entry-image">
 					<a href="<?php the_permalink(); ?>">
@@ -26,24 +26,28 @@
 					<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 				</div>
 				<ul class="entry-meta clearfix">
-					<li><i class="icon-calendar3"></i> <?php the_time( 'jS M Y' ); ?></li>
+					<li><i class="icon-calendar3"></i> <?php the_time( 'M j Y' ); ?></li>
+					<li><i class="icon-user-edit"></i> <?php the_field( 'author' ); ?></li>
 					<li><a href="<?php the_permalink(); ?>#comments"><i class="icon-comments"></i> <?php echo get_comments_number(); ?></a></li>
 				</ul>
 				<div class="entry-content">
-					<?php the_content( $more_link_text = null, $strip_teaser = true ); ?>
+					<?php the_excerpt(); ?>
 				</div>
 			</div>
 		</div>
 
 	<?php
 
-		$post_count++;
+		if( $post_count == 3 ) {
+			$post_count = 1;
+			echo '<div class="clear"></div>';
+		} else {
+			$post_count++;
+		}
 
 		endwhile;
 		endif;
 
 	?>
-
-	<div class="clear"></div>
 
 </div>

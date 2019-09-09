@@ -1,11 +1,30 @@
-/* region Header Adjustment */
+/* #region General Styles */
 
-/* endregion */
+body {
+	font-size: 1rem;
+}
 
-/* region Body Adjustment */
+/* #endregion */
+
+/* #region Header Adjustment */
+
+/* #endregion */
+
+/* #region Body Adjustment */
 
 .fluid-width-video-wrapper {
 	margin-top: 20px;
 }
 
-/* endregion */
+.ipost {
+	.entry-title {
+		h3 {
+			font-size: 1.125rem;
+		}
+		h4 {
+			@extend h3;
+		}
+	}
+}
+
+/* #endregion */
