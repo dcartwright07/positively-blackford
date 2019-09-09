@@ -1,3 +1,34 @@
 .fluid-width-video-wrapper {
 	margin-top: 20px;
 }
+
+/* region Header Adjustment */
+
+#header {
+	height: 90px;
+	&.full-header {
+		padding-bottom: 90px;
+		#logo {
+			height: 90px;
+			padding-top: 10px;
+			img {
+				height: 70px;
+			}
+		}
+		#primary-menu {
+			> ul {
+				height: 90px;
+			}
+		}
+		ul {
+			li > a {
+				padding: 39px 15px 30px;
+			}
+		}
+	}
+}
+
+#header-wrap {
+	height: 90px;
+}
+/* endregion */

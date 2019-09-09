@@ -6467,6 +6467,13 @@ img.mfp-img{width:auto;max-width:100%;height:auto;display:block;line-height:0;-w
 .mfp-fade.mfp-wrap.mfp-ready .mfp-content{opacity:1}
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content{opacity:0}
 .fluid-width-video-wrapper{margin-top:20px}
+#header{height:90px}
+#header.full-header{padding-bottom:90px}
+#header.full-header #logo{height:90px;padding-top:10px}
+#header.full-header #logo img{height:70px}
+#header.full-header #primary-menu>ul{height:90px}
+#header.full-header ul li>a{padding:39px 15px 30px}
+#header-wrap{height:90px}
 @media(prefers-reduced-motion:reduce){.form-control{-webkit-transition:none;transition:none}
 .btn{-webkit-transition:none;transition:none}
 .fade{-webkit-transition:none;transition:none}
