@@ -31,29 +31,35 @@
 						============================================= -->
 						<ul class="entry-meta clearfix">
 							<li><i class="icon-calendar3"></i> <?php the_time( 'F jS, Y' ); ?></li>
-							<li><a href="#"><i class="icon-user"></i> <?php the_field( 'author' ); ?></a></li>
 							<?php
 
+								// Display Categories
 								$category = get_the_category( $post->ID );
 								echo '<li><i class="icon-folder-open"></i>';
 								foreach( $category as $cat ) {
-									echo '<a href="/category/' + $cat->slug + '">' + $cat->cat_name + '</a>';
-									if(  ) {
+									echo '<a href="/category/' . $cat->slug . '">' . $cat->cat_name . '</a>';
+									if( next( $category ) ) {
 										echo ', ';
 									}
 								}
 								echo '</li>';
 
 							?>
-							<!-- <li><i class="icon-folder-open"></i> <a href="#">General</a>, <a href="#">Media</a></li> -->
-							<li><a href="#"><i class="icon-comments"></i> <?php echo get_comments_number(); ?> Comments</a></li>
+							<li><a href="#comments"><i class="icon-comments"></i> <?php echo get_comments_number(); ?> Comments</a></li>
 						</ul><!-- .entry-meta end -->
 
 						<!-- Entry Content
 						============================================= -->
 						<div class="entry-content notopmargin">
+							<p><strong>By: <?php the_field( 'author' ); ?></strong></p>
 
-							<?php the_content(); ?>
+							<?php
+
+								if( have_posts() ) : while ( have_posts() ) : the_post();
+									the_content();
+								endwhile; endif;
+
+							?>
 
 							<!-- Tag Cloud
 							============================================= -->
@@ -103,7 +109,11 @@
 						</div>
 					</div><!-- .entry end -->
 
+					<!-- ADD COMMENT SECTION HERE -->
+
 				</div>
+
+				<?php get_template_part( 'partials/content', 'sidebar' ); ?>
 
 			</div>
 		</div>
