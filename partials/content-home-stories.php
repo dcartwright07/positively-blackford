@@ -27,7 +27,7 @@
 				</div>
 				<ul class="entry-meta clearfix">
 					<li><i class="icon-calendar3"></i> <?php the_time( 'M j Y' ); ?></li>
-					<li><i class="icon-user-edit"></i> <?php the_field( 'author' ); ?></li>
+					<li><i class="icon-user"></i> <?php the_field( 'author' ); ?></li>
 					<li><a href="<?php the_permalink(); ?>#comments"><i class="icon-comments"></i> <?php echo get_comments_number(); ?></a></li>
 				</ul>
 				<div class="entry-content">
