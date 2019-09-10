@@ -1,8 +1,10 @@
-<?php get_header(); ?>
-
 <?php
+
+	get_header();
+
 	$page_object = get_queried_object();
 	$catName = $page_object->cat_name;
+
 ?>
 
 <!-- Page Title
