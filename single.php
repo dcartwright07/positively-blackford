@@ -63,20 +63,20 @@
 
 							<!-- Tag Cloud
 							============================================= -->
-							<div class="tagcloud clearfix bottommargin">
+							<!-- <div class="tagcloud clearfix bottommargin">
 								<a href="#">general</a>
 								<a href="#">information</a>
 								<a href="#">media</a>
 								<a href="#">press</a>
 								<a href="#">gallery</a>
 								<a href="#">illustration</a>
-							</div><!-- .tagcloud end -->
+							</div>
 
-							<div class="clear"></div>
+							<div class="clear"></div> -->
 
 							<!-- Post Single - Share
 							============================================= -->
-							<div class="si-share noborder clearfix">
+							<!-- <div class="si-share noborder clearfix">
 								<span>Share this Post:</span>
 								<div>
 									<a href="#" class="social-icon si-borderless si-facebook">
@@ -104,7 +104,7 @@
 										<i class="icon-email3"></i>
 									</a>
 								</div>
-							</div><!-- Post Single - Share End -->
+							</div> -->
 
 						</div>
 					</div><!-- .entry end -->
