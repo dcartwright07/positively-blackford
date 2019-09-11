@@ -2,7 +2,7 @@
 ============================================= -->
 <div class="footer-widgets-wrap clearfix">
 
-	<div class="col_two_third">
+	<!-- <div class="col_two_third">
 
 		<div class="col_one_third">
 
@@ -150,6 +150,6 @@
 
 		</div>
 
-	</div>
+	</div> -->
 
 </div><!-- .footer-widgets-wrap end -->

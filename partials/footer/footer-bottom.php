@@ -5,12 +5,12 @@
 	<div class="container clearfix">
 
 		<div class="col_half">
-			Copyrights &copy; 2014 All Rights Reserved by Canvas Inc.<br>
-			<div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>
+			Copyrights &copy; <?php echo date("Y"); ?> All Rights Reserved by Blackford Initiative.<br>
+			<div class="copyright-links"><a href="/terms-of-use">Terms of Use</a> / <a href="/privacy-policy">Privacy Policy</a></div>
 		</div>
 
 		<div class="col_half col_last tright">
-			<div class="fright clearfix">
+			<!--<div class="fright clearfix">
 				<a href="#" class="social-icon si-small si-borderless si-facebook">
 					<i class="icon-facebook"></i>
 					<i class="icon-facebook"></i>
@@ -52,9 +52,9 @@
 				</a>
 			</div>
 
-			<div class="clear"></div>
+			<div class="clear"></div> -->
 
-			<i class="icon-envelope2"></i> info@canvas.com <span class="middot">&middot;</span> <i class="icon-headphones"></i> +91-11-6541-6369 <span class="middot">&middot;</span> <i class="icon-skype2"></i> CanvasOnSkype
+			<i class="icon-envelope2"></i> positiveblackfordnews@gmail.com <span class="middot">&middot;</span> <i class="icon-phone"></i> (000) 000-0000
 		</div>
 
 	</div>
