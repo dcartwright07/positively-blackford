@@ -60,10 +60,8 @@
 							</div>
 							<ul class="entry-meta clearfix">
 								<li><i class="icon-calendar3"></i> <?php the_time( 'M j Y' ); ?></li>
-								<li><a href="#"><i class="icon-user"></i> <?php the_field( 'author' ); ?></a></li>
-								<!-- <li><i class="icon-folder-open"></i> <a href="#">General</a>, <a href="#">Media</a></li> -->
+								<li><i class="icon-user"></i> <?php the_field( 'author' ); ?></li>
 								<li><a href="<?php the_permalink(); ?>#comments"><i class="icon-comments"></i> <?php echo get_comments_number(); ?></a></li>
-								<!-- <li><i href="#"><i class="icon-camera-retro"></i></i></li> -->
 							</ul>
 							<div class="entry-content">
 								<?php the_excerpt(); ?>
