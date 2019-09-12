@@ -54,7 +54,7 @@
 
 			<div class="clear"></div> -->
 
-			<i class="icon-envelope2"></i> positiveblackfordnews@gmail.com <span class="middot">&middot;</span> <i class="icon-phone"></i> (000) 000-0000
+			<i class="icon-envelope2"></i> positiveblackfordnews@gmail.com
 		</div>
 
 	</div>
