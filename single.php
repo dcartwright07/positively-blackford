@@ -110,6 +110,13 @@
 					</div><!-- .entry end -->
 
 					<!-- ADD COMMENT SECTION HERE -->
+					<?php
+
+						if( comments_open() || get_comments_number() ) :
+    					comments_template( '/partials/comments.php' );
+						endif;
+
+					?>
 
 				</div>
 

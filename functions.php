@@ -88,4 +88,75 @@ add_filter( 'excerpt_more', 'pb_excerpt_more' );
 
 /* #endregion */
 
+/* #region Comments with Theme Design */
+function pb_theme_comment( $comment, $args, $depth ) {
+
+	if( 'div' === $args['style'] ) {
+		$tag       = 'div';
+		$add_below = 'comment';
+	} else {
+		$tag       = 'li';
+		$add_below = 'div-comment';
+	}
+
+	if( $comment->comment_approved != '0' ) {
+	?>
+
+	<<?php echo $tag; ?> <?php comment_class( empty( $args['comment even thread-even depth-1'] ) ? '' : 'parent' ); ?> id="li-comment-<?php comment_ID() ?>">
+
+	<?php if( 'div' != $args['style'] ) { ?>
+		<div id="comment-<?php comment_ID() ?>" class="comment-wrap clearfix">
+	<?php } ?>
+
+		<div class="comment-meta">
+			<div class="comment-author vcard">
+
+				<?php if ( $args['avatar_size'] != 0 ) { ?>
+					<span class="comment-avatar clearfix">
+					<?php echo get_avatar( $comment, $args ); ?>
+					</span>
+				<?php } ?>
+				<?php // printf( __( '<cite class="fn">%s</cite> <span class="says">says:</span>' ), get_comment_author_link() ); ?>
+			</div>
+		</div>
+
+		<div class="comment-content clearfix">
+			<div class="comment-author">
+				<?php echo get_comment_author(); ?>
+				<span>
+					<a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ); ?>">
+						<?php
+							/* translators: 1: date, 2: time */
+							printf( __( '%1$s at %2$s' ), get_comment_date(), get_comment_time() );
+						?>
+					</a>
+				</span>
+				<?php // edit_comment_link( __( '(Edit)' ), '  ', '' ); ?>
+			</div>
+
+			<?php
+
+				comment_text();
+
+				comment_reply_link(
+					array_merge( $args, array(
+						'add_below' 	=> $add_below,
+						'depth'     	=> $depth,
+						'max_depth' 	=> $args['max_depth'],
+						'class' 			=> 'comment-reply-link',
+						'reply_text'	=> __( '<i class="icon-reply"></i>' ),
+					) )
+				);
+
+			?>
+		</div>
+
+		<div class="clear"></div>
+	</div>
+
+	<?php
+	}
+}
+/* #endregion */
+
 ?>
