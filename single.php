@@ -9,9 +9,9 @@
 
 				<!-- Entry Image
 				============================================= -->
-				<div class="entry-image bottommargin">
-					<?php the_post_thumbnail(); ?>
-				</div><!-- .entry-image end -->
+				<!-- <div class="entry-image bottommargin"> -->
+					<?php // the_post_thumbnail(); ?>
+				<!-- </div> -->
 
 				<!-- Post Content
 				============================================= -->
