@@ -1911,7 +1911,6 @@ body.device-touch.device-sm .portfolio-notitle .portfolio-overlay,body.device-to
 #posts{position:relative}
 #posts .entry-content{margin-top:30px}
 .entry{position:relative;margin:0 0 50px}
-.entry:after{content:'';position:relative;height:2px;margin-top:50px;background-color:#f5f5f5}
 .entry blockquote p{font-weight:400;font-family:"Crete Round",serif;font-style:italic}
 .entry-image,.entry-image>a,.entry-image .slide a,.entry-image img{display:block;position:relative;width:100%;height:auto}
 .entry-image{margin-bottom:30px}
