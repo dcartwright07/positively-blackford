@@ -6469,6 +6469,7 @@ body{font-size:1rem}
 ul{margin-left:30px}
 .fluid-width-video-wrapper{margin-top:20px}
 .ipost .entry-title h3,.ipost .entry-title h4{font-size:1.125rem}
+.copyright-links li{display:inline}
 @media(prefers-reduced-motion:reduce){.form-control{-webkit-transition:none;transition:none}
 .btn{-webkit-transition:none;transition:none}
 .fade{-webkit-transition:none;transition:none}

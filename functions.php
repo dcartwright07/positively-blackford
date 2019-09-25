@@ -161,4 +161,40 @@ function pb_theme_comment( $comment, $args, $depth ) {
 }
 /* #endregion */
 
+/* #regin Custom Horizontal Navigation for the Bottom Footer Section */
+
+function footer_bottom_nav() {
+
+	$menu_name = 'footer-menu-bottom'; // specify custom menu slug
+	if( ( $locations = get_nav_menu_locations() ) && isset( $locations[$menu_name] ) ) {
+
+		$menu = wp_get_nav_menu_object( $locations[$menu_name] );
+		$menu_items = wp_get_nav_menu_items( $menu->term_id );
+
+		$menu_list = '<nav>' ."\n";
+		// $menu_list .= "\t\t\t\t". '<ul>' ."\n";
+		foreach( ( array ) $menu_items as $key => $menu_item ) {
+
+			$title = $menu_item->title;
+			$url = $menu_item->url;
+			$menu_list .= "\t\t\t\t\t". '<a href="'. $url .'">'. $title .'</a>';
+
+			if( $key !== count( $menu_items ) -1 ) {
+				$menu_list .= '/' . "\n";
+			} else {
+				$menu_list .= "\n";
+			}
+
+		}
+		// $menu_list .= "\t\t\t\t". '</ul>' ."\n";
+		$menu_list .= "\t\t\t". '</nav>' ."\n";
+
+	} else {
+		$menu_list = '<!-- no list defined -->';
+	}
+	echo $menu_list;
+
+}
+
+/* #endregion */
 ?>
