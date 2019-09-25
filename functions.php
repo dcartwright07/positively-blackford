@@ -35,26 +35,20 @@ add_filter( 'upload_mimes', 'add_file_types_to_uploads' );
 
 /* #endregion */
 
-/* #region Import all CSS */
+/* #region Imports  */
 
+// CSS file imports
 function pb_theme_style() {
 
-	// Webfonts
 	wp_enqueue_style( 'googlefont_css', 'https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Raleway:300,400,500,600,700|Crete+Round:400i' );
-
-	// Main Theme Styles
 	wp_enqueue_style( 'main_css', get_template_directory_uri() . '/style.css' );
 
 }
 add_action( 'wp_enqueue_scripts', 'pb_theme_style' );
 
-/* #endregion */
-
-/* #region Import all JavaScript */
-
+// JavaScript file imports
 function pb_theme_js() {
 
-	// Theme Scripts
 	wp_enqueue_script( 'plugins_js', get_template_directory_uri() . '/assets/js/plugins.js', array( 'jquery' ), '',  true );
 	wp_enqueue_script( 'functions_js', get_template_directory_uri() . '/assets/js/functions.js', array( 'jquery' ), '',  true );
 
@@ -163,7 +157,7 @@ function pb_theme_comment( $comment, $args, $depth ) {
 
 /* #region Custom Horizontal Navigation for the Bottom Footer Section */
 
-function footer_bottom_nav() {
+function pb_footer_bottom_nav() {
 
 	$menu_name = 'footer-menu-bottom'; // specify custom menu slug
 	if( ( $locations = get_nav_menu_locations() ) && isset( $locations[$menu_name] ) ) {
