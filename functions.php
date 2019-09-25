@@ -12,7 +12,9 @@ function register_theme_menus() {
 	register_nav_menus(
 		array(
 			'primary-menu' => __( 'Primary Menu' ),
-			'footer-social-media-menu' => __( 'Social Media' )
+			'footer-menu-bottom' => __( 'Footer Menu - Bottom' ),
+			'footer-column-2' => __( 'Footer Menu - Column 2' ),
+			'footer-column-3' => __( 'Footer Menu - Column 3' )
 		)
 	);
 
