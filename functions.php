@@ -171,8 +171,8 @@ function footer_bottom_nav() {
 		$menu = wp_get_nav_menu_object( $locations[$menu_name] );
 		$menu_items = wp_get_nav_menu_items( $menu->term_id );
 
+		// Build HTML5 navigation structure
 		$menu_list = '<nav>' ."\n";
-		// $menu_list .= "\t\t\t\t". '<ul>' ."\n";
 		foreach( ( array ) $menu_items as $key => $menu_item ) {
 
 			$title = $menu_item->title;
@@ -186,7 +186,6 @@ function footer_bottom_nav() {
 			}
 
 		}
-		// $menu_list .= "\t\t\t\t". '</ul>' ."\n";
 		$menu_list .= "\t\t\t". '</nav>' ."\n";
 
 	} else {
@@ -197,4 +196,5 @@ function footer_bottom_nav() {
 }
 
 /* #endregion */
+
 ?>
