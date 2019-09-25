@@ -1,11 +1,11 @@
 <?php
 
+/* #region Initializations */
+
 // Turn theme support on for various features
 // ====================================
 add_theme_support( 'menus' );
 add_theme_support( 'post-thumbnails' );
-
-/* #region Initializations */
 
 // Menus to use in the admin panel
 function register_theme_menus() {
