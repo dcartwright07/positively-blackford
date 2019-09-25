@@ -32,8 +32,16 @@
 			<?php get_search_form(); ?>
 
 			<h2>Archives by Month:</h2>
-			<ul>
-				<?php wp_get_archives('type=monthly'); ?>
+			<ul class="iconlist">
+				<?php
+
+					$args = array(
+						'type'		=> 'monthly',
+						'before'	=> '<li class="icon-calendar3"> '
+					);
+					wp_get_archives( $args );
+
+				?>
 			</ul>
 
 			<h2>Archives by Category:</h2>
