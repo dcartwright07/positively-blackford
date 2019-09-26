@@ -13,6 +13,9 @@
 
 		if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post();
 
+			$featured = get_field( 'featured_story' );
+			if( $featured != 'yes' ) :
+
 	?>
 
 		<div class="col_one_third <?php if( $post_count == 3 ) { echo 'col_last'; } ?>">
@@ -45,6 +48,7 @@
 			$post_count++;
 		}
 
+		endif;
 		endwhile;
 		endif;
 
