@@ -26,37 +26,35 @@
 
 	<div class="col_one_third">
 		<div class="widget widget_links clearfix">
+			<?php
 
-		<h4>Title</h4>
+				$menu1 = wp_get_nav_menu_object( 'city-chambers' );
+				echo '<h4>' . $menu1->name . '</h4>';
 
-		<?php
+				$menuList1 = array(
+					'container' => false,
+					'theme_location' => 'footer-column-2'
+				);
+				wp_nav_menu( $menuList1 );
 
-			$footercolumn2 = array(
-				'container' => false,
-				'theme_location' => 'footer-column-2'
-			);
-			wp_nav_menu( $footercolumn2 );
-
-		?>
-
+			?>
 		</div>
 	</div>
 
 	<div class="col_one_third col_last">
 		<div class="widget widget_links clearfix">
-
-			<h4>Title</h4>
-
 			<?php
 
-				$footercolumn3 = array(
+				$menu2 = wp_get_nav_menu_object( 'city-government' );
+				echo '<h4>' . $menu2->name . '</h4>';
+
+				$menuList2 = array(
 					'container' => false,
 					'theme_location' => 'footer-column-3'
 				);
-				wp_nav_menu( $footercolumn3 );
+				wp_nav_menu( $menuList2 );
 
 			?>
-
 		</div>
 	</div>
 
