@@ -57,45 +57,24 @@
 
 <div class="col_two_fifth bottommargin-lg col_last">
 
-	<div class="spost clearfix">
-		<div class="entry-c">
-			<div class="entry-title">
-				<h4><a href="#">UK government weighs Tesla's Model S for its ??5 million electric vehicle fleet</a></h4>
-			</div>
-		</div>
-	</div>
+	<?php
+
+		if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post();
+
+			$featured = get_field( 'featured_story' );
+			if( $featured == 'yes' ) :
+
+	?>
 
 	<div class="spost clearfix">
 		<div class="entry-c">
 			<div class="entry-title">
-				<h4><a href="#">MIT's new robot glove can give you extra fingers</a></h4>
+				<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
 			</div>
 		</div>
 	</div>
 
-	<div class="spost clearfix">
-		<div class="entry-c">
-			<div class="entry-title">
-				<h4><a href="#">You can now listen to headphones through your hoodie</a></h4>
-			</div>
-		</div>
-	</div>
-
-	<div class="spost clearfix">
-		<div class="entry-c">
-			<div class="entry-title">
-				<h4><a href="#">How would you change Kobo's Aura HD e-reader?</a></h4>
-			</div>
-		</div>
-	</div>
-
-	<div class="spost clearfix">
-		<div class="entry-c">
-			<div class="entry-title">
-				<h4><a href="#">A Baseball Team Blew Up A Bunch Of Justin Bieber And Miley Cyrus Merch</a></h4>
-			</div>
-		</div>
-	</div>
+	<?php endif; endwhile; endif; ?>
 
 </div>
 
