@@ -10,6 +10,7 @@
 		<div class="container clearfix">
 			<div class="col_full nobottommargin">
 
+				<?php get_template_part( 'partials/content', 'featured-stories' ); ?>
 				<?php get_template_part( 'partials/content', 'home-stories' ); ?>
 
 			</div>
