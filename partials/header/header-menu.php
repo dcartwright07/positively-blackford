@@ -11,7 +11,7 @@
 	);
 	wp_nav_menu($defaults);
 
-	get_template_part( 'partials/header/header', 'search' );
+	// get_template_part( 'partials/header/header', 'search' );
 
 ?>
 

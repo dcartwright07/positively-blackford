@@ -6467,6 +6467,7 @@ img.mfp-img{width:auto;max-width:100%;height:auto;display:block;line-height:0;-w
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content{opacity:0}
 body{font-size:1rem}
 ul{margin-left:30px}
+#header.full-header #primary-menu>ul{padding-right:0;margin-right:0;border-right:0}
 .fluid-width-video-wrapper{margin-top:20px}
 .ipost .entry-title h3,.ipost .entry-title h4{font-size:1.125rem}
 .copyright-links li{display:inline}

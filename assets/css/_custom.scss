@@ -12,6 +12,18 @@ ul {
 
 /* #region Header Adjustment */
 
+#header {
+	&.full-header {
+		#primary-menu {
+			> ul {
+				padding-right: 0;
+				margin-right: 0;
+				border-right: none;
+			}
+		}
+	}
+}
+
 /* #endregion */
 
 /* #region Body Adjustment */
