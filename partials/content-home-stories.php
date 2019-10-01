@@ -13,8 +13,8 @@
 
 		if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post();
 
-			$featured = get_field( 'featured_story' );
-			if( $featured != 'yes' ) :
+			// $featured = get_field( 'featured_story' );
+			// if( $featured != 'yes' ) :
 
 	?>
 
@@ -48,7 +48,7 @@
 			$post_count++;
 		}
 
-		endif;
+		// endif;
 		endwhile;
 		endif;
 
