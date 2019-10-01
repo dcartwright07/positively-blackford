@@ -1,5 +1,9 @@
 <div class="col_full bottommargin-lg clearfix">
 
+	<div class="fancy-title title-border">
+		<h3>Latest Stories</h3>
+	</div>
+
 	<?php
 
 		$post_count = 1;
