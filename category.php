@@ -5,6 +5,9 @@
 	$page_object = get_queried_object();
 	$catName = $page_object->cat_name;
 
+	$page_id = get_queried_object_id();
+	// $catID = $page_id->
+
 ?>
 
 <!-- Page Title
@@ -39,7 +42,8 @@
 					<?php
 
 						$args = array(
-							'category_name' => $catName,
+							// 'category_name' => $catName,
+							'category__in' => array( $page_id ),
 							'posts_per_page' => 5
 						);
 						$query =  new WP_Query( $args );
