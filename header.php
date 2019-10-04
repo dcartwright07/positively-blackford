@@ -2,6 +2,16 @@
 <html dir="ltr" lang="en-US">
 <head>
 
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-149399896-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-149399896-1');
+	</script>
+
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="author" content="Dominic Cartwright, Kevin McGregor" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
