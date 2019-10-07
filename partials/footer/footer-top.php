@@ -28,7 +28,7 @@
 		<div class="widget widget_links clearfix">
 			<?php
 
-				$menu1 = wp_get_nav_menu_object( 'city-chambers' );
+				$menu1 = wp_get_nav_menu_object( 'government' );
 				echo '<h4>' . $menu1->name . '</h4>';
 
 				$menuList1 = array(
@@ -45,7 +45,7 @@
 		<div class="widget widget_links clearfix">
 			<?php
 
-				$menu2 = wp_get_nav_menu_object( 'city-government' );
+				$menu2 = wp_get_nav_menu_object( 'community' );
 				echo '<h4>' . $menu2->name . '</h4>';
 
 				$menuList2 = array(
