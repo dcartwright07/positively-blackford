@@ -28,6 +28,8 @@
 	============================================= -->
 	<div id="wrapper" class="clearfix">
 
+		<?php get_template_part( 'partials/header/top', 'bar' ); ?>
+
 		<!-- Header
 		============================================= -->
 		<header id="header" class="full-header">
@@ -41,3 +43,5 @@
 				</div>
 			</div>
 		</header><!-- #header end -->
+
+		<?php //get_template_part( 'partials/header/top', 'bar' ); ?>
