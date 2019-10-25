@@ -8,7 +8,7 @@
 
 		$post_count = 1;
 		$num_posts = 0;
-		if( is_front_page() ) $num_posts = 9;
+		if( is_front_page() ) $num_posts = 8;
 
 		$args = array(
 			'post_per_page' => $num_posts
