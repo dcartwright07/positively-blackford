@@ -6,10 +6,10 @@
 				<?php
 
 					$num_posts = -1;
-					if( is_front_page() ) $num_posts = 5;
+					if( is_front_page() ) $num_posts = 6;
 
 					$args = array(
-						'post_per_page' => $num_posts
+						'posts_per_page' => $num_posts
 					);
 					$query =  new WP_Query( $args );
 
