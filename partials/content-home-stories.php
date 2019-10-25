@@ -7,7 +7,7 @@
 	<?php
 
 		$post_count = 1;
-		$num_posts = -1;
+		$num_posts = 0;
 		if( is_front_page() ) $num_posts = 9;
 
 		$args = array(
