@@ -1,5 +1,5 @@
 <div class="col_three_fifth bottommargin-lg">
-	<div class="fslider flex-thumb-grid grid-6" data-speed="400" data-arrows="true" data-thumbs="false" data-easing="easeOutQuad">
+	<div class="fslider flex-thumb-grid grid-6" data-speed="500" data-arrows="true" data-thumbs="false" data-easing="easeOutQuad">
 		<div class="flexslider">
 			<div class="slider-wrap">
 
