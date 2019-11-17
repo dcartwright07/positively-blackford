@@ -27,9 +27,12 @@
 	<div class="content-wrap">
 		<div class="container clearfix">
 
-			<?php the_post(); ?>
+			<?php
 
-			<?php get_search_form(); ?>
+			// the_post();
+			// get_search_form();
+
+			?>
 
 			<h2>Archives by Month:</h2>
 			<ul class="iconlist">
