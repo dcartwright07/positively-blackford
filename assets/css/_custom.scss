@@ -14,6 +14,7 @@ ul {
 
 #header {
 	&.full-header {
+		border-bottom-color: #ddd;
 		#primary-menu {
 			> ul {
 				padding-right: 0;
@@ -21,6 +22,25 @@ ul {
 				border-right: none;
 			}
 		}
+		#logo {
+			border-right: none;
+		}
+	}
+}
+
+#top-bar {
+	background-color: #eee;
+	border-bottom: none;
+}
+
+#page-title {
+	background-color: #74BAD4;
+	border-bottom: none;
+	h1 {
+		color: #000;
+	}
+	span {
+		color: #222;
 	}
 }
 

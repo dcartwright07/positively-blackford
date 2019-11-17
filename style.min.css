@@ -6467,7 +6467,13 @@ img.mfp-img{width:auto;max-width:100%;height:auto;display:block;line-height:0;-w
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content{opacity:0}
 body{font-size:1rem}
 ul{margin-left:30px}
+#header.full-header{border-bottom-color:#ddd}
 #header.full-header #primary-menu>ul{padding-right:0;margin-right:0;border-right:0}
+#header.full-header #logo{border-right:0}
+#top-bar{background-color:#eee;border-bottom:0}
+#page-title{background-color:#74bad4;border-bottom:0}
+#page-title h1{color:#000}
+#page-title span{color:#222}
 .fluid-width-video-wrapper{margin-top:20px}
 .ipost .entry-title h3,.ipost .entry-title h4{font-size:1.125rem}
 .copyright-links li{display:inline}
