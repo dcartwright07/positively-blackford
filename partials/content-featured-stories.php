@@ -53,19 +53,21 @@
 <div class="col_two_fifth bottommargin-lg col_last">
 	<?php
 
-	if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post();
-		$featured = get_field( 'featured_story' );
-		if( $featured == 'yes' ) :
+	if( !wp_is_mobile() ) :
 
-	?>
-	<div class="spost clearfix">
-		<div class="entry-c">
-			<div class="entry-title">
-				<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+		if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post();
+			$featured = get_field( 'featured_story' );
+			if( $featured == 'yes' ) :
+
+		?>
+		<div class="spost clearfix">
+			<div class="entry-c">
+				<div class="entry-title">
+					<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+				</div>
 			</div>
 		</div>
-	</div>
-	<?php endif; endwhile; endif; ?>
+	<?php endif; endwhile; endif; endif; ?>
 </div>
 
 <div class="clear"></div>
