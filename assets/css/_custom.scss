@@ -29,18 +29,26 @@ ul {
 }
 
 #top-bar {
-	background-color: #eee;
-	border-bottom: none;
-}
-
-#page-title {
-	background-color: #74BAD4;
-	border-bottom: none;
-	h1 {
-		color: #000;
+	background-color: $page-title-bg;
+	.top-links {
+		ul {
+			li {
+				border-left: 1px solid #ddd;
+				&:hover {
+					background-color: $theme-color;
+				}
+				a {
+					&:hover {
+						color: #000000;
+					}
+				}
+			}
+		}
 	}
-	span {
-		color: #222;
+	#top-social {
+		li {
+			border-left: 1px solid #ddd;
+		}
 	}
 }
 
