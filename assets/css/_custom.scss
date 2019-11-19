@@ -14,12 +14,40 @@ ul {
 
 #header {
 	&.full-header {
+		border-bottom-color: #ddd;
 		#primary-menu {
 			> ul {
 				padding-right: 0;
 				margin-right: 0;
 				border-right: none;
 			}
+		}
+		#logo {
+			border-right: none;
+		}
+	}
+}
+
+#top-bar {
+	background-color: $page-title-bg;
+	.top-links {
+		ul {
+			li {
+				border-left: 1px solid #ddd;
+				&:hover {
+					background-color: $theme-color;
+				}
+				a {
+					&:hover {
+						color: #000000;
+					}
+				}
+			}
+		}
+	}
+	#top-social {
+		li {
+			border-left: 1px solid #ddd;
 		}
 	}
 }
