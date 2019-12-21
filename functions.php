@@ -210,16 +210,6 @@ function pb_custom_post_type_archive_where( $where, $args ) {
 	return $where;
 
 }
-// function pb_getarchives_where_filter( $where , $r ) {
-
-// 	$args = array( 'public' => true , '_builtin' => false );
-// 	$output = 'names'; $operator = 'and';
-// 	$post_types = get_post_types( $args , $output , $operator );
-// 	$post_types = array_merge( $post_types , array( 'post', 'video' ) );
-// 	$post_types = "'" . implode( "' , '" , $post_types ) . "'";
-
-// 	return str_replace( "post_type = 'post'" , "post_type IN ( $post_types )" , $where );
-
-// }
 add_filter( 'getarchives_where' , 'pb_custom_post_type_archive_where' , 10 , 2 );
+
 ?>
