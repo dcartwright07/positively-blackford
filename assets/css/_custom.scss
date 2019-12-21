@@ -60,6 +60,10 @@ ul {
 	margin-top: 20px;
 	margin-bottom: 20px;
 	padding: 28% !important;
+	.entry-image & {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
 }
 
 .ipost {

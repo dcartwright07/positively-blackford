@@ -7,15 +7,19 @@
 		<div class="container clearfix">
 			<div class="single-post nobottommargin">
 
-				<!-- Entry Image
-				============================================= -->
-				<!-- <div class="entry-image bottommargin"> -->
-					<?php // the_post_thumbnail(); ?>
-				<!-- </div> -->
-
 				<!-- Post Content
 				============================================= -->
 				<div class="postcontent nobottommargin clearfix">
+
+					<!-- Entry Image
+					============================================= -->
+					<?php if( get_field( 'video_id' ) ) : ?>
+						<div class="entry-image bottommargin">
+							<div class="fluid-width-video-wrapper">
+								<iframe	frame src="https://www.youtube.com/embed/<?php the_field( 'video_id' ); ?>" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" id="fitvid0"></iframe>
+							</div>
+						</div>
+					<?php endif; ?>
 
 					<!-- Single Post
 					============================================= -->
