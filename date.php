@@ -5,7 +5,7 @@ get_header();
 // Get month the user chooses
 $year = get_query_var( 'year' );
 $monthnum = get_query_var( 'monthnum' );
-$month = $GLOBALS['wp_locale']->get_month($monthnum);
+$month = $GLOBALS['wp_locale']->get_month( $monthnum );
 
 ?>
 
@@ -47,6 +47,7 @@ $month = $GLOBALS['wp_locale']->get_month($monthnum);
 						'order'					=> 'DESC',
 						'orderby'				=> 'date',
 						// 'post_per_page'	=> 10,
+						'post_type'			=> array( 'post', 'video' )
 					);
 					$query =  new WP_Query( $args );
 

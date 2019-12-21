@@ -202,4 +202,24 @@ function pb_footer_bottom_nav() {
 
 /* #endregion */
 
+// Add Custom Post Types to archives
+function pb_custom_post_type_archive_where( $where, $args ) {
+
+	$post_type  = isset( $args['post_type'] )  ? $args['post_type']  : 'post';
+	$where = "WHERE post_type = '$post_type' AND post_status = 'publish'";
+	return $where;
+
+}
+// function pb_getarchives_where_filter( $where , $r ) {
+
+// 	$args = array( 'public' => true , '_builtin' => false );
+// 	$output = 'names'; $operator = 'and';
+// 	$post_types = get_post_types( $args , $output , $operator );
+// 	$post_types = array_merge( $post_types , array( 'post', 'video' ) );
+// 	$post_types = "'" . implode( "' , '" , $post_types ) . "'";
+
+// 	return str_replace( "post_type = 'post'" , "post_type IN ( $post_types )" , $where );
+
+// }
+add_filter( 'getarchives_where' , 'pb_custom_post_type_archive_where' , 10 , 2 );
 ?>
