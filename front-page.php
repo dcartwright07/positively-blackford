@@ -12,6 +12,7 @@
 
 				<?php get_template_part( 'partials/content', 'featured-stories' ); ?>
 				<?php get_template_part( 'partials/content', 'home-stories' ); ?>
+				<?php get_template_part( 'partials/content', 'featured-videos' ); ?>
 
 			</div>
 		</div>
