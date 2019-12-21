@@ -43,8 +43,9 @@
 
 						$args = array(
 							// 'category_name' => $catName,
-							'category__in' => array( $page_id ),
-							'posts_per_page' => 5
+							'category__in' 		=> array( $page_id ),
+							'posts_per_page' 	=> 5,
+							'post_type'				=> array( 'post', 'video' )
 						);
 						$query =  new WP_Query( $args );
 
@@ -52,7 +53,7 @@
 							get_template_part( 'partials/content', 'listings' );
 						endwhile; endif;
 
-						// get_template_part( 'partials/snippet', 'pagination' );
+						get_template_part( 'partials/snippet', 'pagination' );
 
 					?>
 

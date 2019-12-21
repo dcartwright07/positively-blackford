@@ -1,8 +1,14 @@
 <div class="entry clearfix">
 	<div class="entry-image">
+		<?php if( get_post_type() == 'post' ) : ?>
 		<a href="<?php the_permalink(); ?>" data-lightbox="image">
 			<?php the_post_thumbnail( 'post-thumbnail', [ 'class' => 'image_fade' ] ); ?>
 		</a>
+		<?php elseif( get_post_type() == 'video' ) : ?>
+			<a href="<?php the_permalink(); ?>" data-lightbox="image">
+				<img src="https://img.youtube.com/vi/<?php the_field( 'video_id' ); ?>/mqdefault.jpg" class="image_fade" />
+			</a>
+		<?php endif; ?>
 	</div>
 	<div class="entry-c">
 		<div class="entry-title">
