@@ -1,7 +1,7 @@
 <div class="col_full bottommargin-lg clearfix">
 
 	<div class="fancy-title title-border">
-		<h3>Featured Video</h3>
+		<h3>Featured Videos</h3>
 	</div>
 
 	<?php
@@ -22,9 +22,14 @@
 	?>
 	<div class="col_half <?php if( $post_count == 2 ) { echo 'col_last'; } ?>">
 		<div class="ipost">
-			<div class="fluid-width-video-wrapper">
-				<iframe src="https://www.youtube.com/embed/<?php the_field( 'video_id' ); ?>" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" id="fitvid0"></iframe>
+			<div class="entry-image">
+				<a href="<?php the_permalink(); ?>" data-lightbox="image">
+					<img src="https://img.youtube.com/vi/<?php the_field( 'video_id' ); ?>/maxresdefault.jpg" class="image_fade" />
+				</a>
 			</div>
+			<!-- <div class="fluid-width-video-wrapper">
+				<iframe src="https://www.youtube.com/embed/<?php //the_field( 'video_id' ); ?>" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" id="fitvid0"></iframe>
+			</div> -->
 
 			<div class="entry-title">
 				<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
