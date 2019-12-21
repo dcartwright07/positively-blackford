@@ -7,11 +7,10 @@
 	<?php
 
 		$post_count = 1;
-		$num_posts = -1;
-		// if( is_front_page() ) $num_posts = 6;
-
+		$num_posts = 2;
 		$args = array(
-			'posts_per_page' => $num_posts
+			'posts_per_page' 	=> $num_posts,
+			'post_type'				=> 'video'
 		);
 		$query =  new WP_Query( $args );
 
@@ -21,25 +20,37 @@
 			if( $featured == 'yes' ) :
 
 	?>
+	<div class="col_half <?php if( $post_count == 2 ) { echo 'col_last'; } ?>">
+		<div class="ipost">
+			<div class="fluid-width-video-wrapper">
+				<iframe src="https://www.youtube.com/embed/<?php the_field( 'video_id' ); ?>" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" id="fitvid0"></iframe>
+			</div>
 
-	<div class="fluid-width-video-wrapper" style="padding-top: 56.2%;">
-		<iframe src="<?php the_field( 'embed_code' ) . '/' . the_field( 'embed_code' ); ?>" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" id="fitvid0"></iframe>
+			<div class="entry-title">
+				<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+			</div>
+
+			<ul class="entry-meta clearfix">
+				<li><i class="icon-calendar3"></i> <?php the_time( 'M j Y' ); ?></li>
+				<li><i class="icon-user"></i> <?php the_field( 'author' ); ?></li>
+				<li><a href="<?php the_permalink(); ?>#comments"><i class="icon-comments"></i> <?php echo get_comments_number(); ?></a></li>
+			</ul>
+
+			<div class="entry-content">
+				<?php the_excerpt(); ?>
+			</div>
+		</div>
 	</div>
 
-	<div class="entry-title">
-		<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-	</div>
+	<?php
 
-	<ul class="entry-meta clearfix">
-		<li><i class="icon-calendar3"></i> <?php the_time( 'M j Y' ); ?></li>
-		<li><i class="icon-user"></i> <?php the_field( 'author' ); ?></li>
-		<li><a href="<?php the_permalink(); ?>#comments"><i class="icon-comments"></i> <?php echo get_comments_number(); ?></a></li>
-	</ul>
+		if( $post_count == 2 ) {
+			$post_count = 1;
+			echo '<div class="clear"></div>';
+		} else {
+			$post_count++;
+		}
 
-	<div class="entry-content">
-		<?php the_excerpt(); ?>
-	</div>
-
-	<?php endif; endwhile; endif; ?>
+		endif; endwhile; endif; ?>
 
 </div>
