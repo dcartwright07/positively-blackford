@@ -34,27 +34,13 @@
 
 			?>
 
-			<h2>Stories by Month:</h2>
+			<h2>Archives by Month:</h2>
 			<ul class="iconlist">
 				<?php
 
 					$args = array(
 						'type'		=> 'monthly',
 						'before'	=> '<li class="icon-calendar3"> '
-					);
-					wp_get_archives( $args );
-
-				?>
-			</ul>
-
-			<h2>Video by Month:</h2>
-			<ul class="iconlist">
-				<?php
-
-					$args = array(
-						'type'			=> 'monthly',
-						'before'		=> '<li class="icon-calendar3"> ',
-						'post_type'	=> 'video'
 					);
 					wp_get_archives( $args );
 
