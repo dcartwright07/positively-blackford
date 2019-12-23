@@ -22,14 +22,14 @@
 	?>
 	<div class="col_half <?php if( $post_count == 2 ) { echo 'col_last'; } ?>">
 		<div class="ipost">
-			<div class="entry-image">
+			<!-- <div class="entry-image">
 				<a href="<?php the_permalink(); ?>" data-lightbox="image">
 					<img src="https://img.youtube.com/vi/<?php the_field( 'video_id' ); ?>/maxresdefault.jpg" class="image_fade" />
 				</a>
-			</div>
-			<!-- <div class="fluid-width-video-wrapper">
-				<iframe src="https://www.youtube.com/embed/<?php //the_field( 'video_id' ); ?>" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" id="fitvid0"></iframe>
 			</div> -->
+			<div class="fluid-width-video-wrapper">
+				<iframe src="https://www.youtube.com/embed/<?php the_field( 'video_id' ); ?>" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" id="fitvid0"></iframe>
+			</div>
 
 			<div class="entry-title">
 				<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
@@ -41,9 +41,9 @@
 				<li><a href="<?php the_permalink(); ?>#comments"><i class="icon-comments"></i> <?php echo get_comments_number(); ?></a></li>
 			</ul>
 
-			<div class="entry-content">
+			<!-- <div class="entry-content">
 				<?php the_excerpt(); ?>
-			</div>
+			</div> -->
 		</div>
 	</div>
 

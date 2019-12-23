@@ -2,7 +2,14 @@
 ============================================= -->
 <div class="row mb-3">
 	<div class="col-12">
-		<a href="#" class="btn btn-outline-secondary float-left">&larr; Older</a>
-		<a href="#" class="btn btn-outline-dark float-right">Newer &rarr;</a>
+
+		<?php if( get_previous_posts_link() ) : ?>
+			<div class="btn btn-outline-dark float-left"><?php previous_posts_link( '&larr; Newer Posts' ); ?></div>
+		<?php endif; ?>
+
+		<?php if( get_next_posts_link() ) : ?>
+			<div class="btn btn-outline-dark float-right"><?php next_posts_link( 'Older Posts &rarr;' ); ?></div>
+		<?php endif; ?>
+
 	</div>
 </div>

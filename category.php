@@ -41,19 +41,25 @@
 
 					<?php
 
+						// $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+						$num_posts = 5;
 						$args = array(
-							// 'category_name' => $catName,
+							'post_type'				=> array( 'post', 'video' ),
 							'category__in' 		=> array( $page_id ),
-							'posts_per_page' 	=> 5,
-							'post_type'				=> array( 'post', 'video' )
+							'posts_per_page' 	=> $num_posts,
+							// 'paged'          	=> $paged
 						);
 						$query =  new WP_Query( $args );
 
-						if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post();
-							get_template_part( 'partials/content', 'listings' );
-						endwhile; endif;
+						if( $query->have_posts() ) :
 
-						get_template_part( 'partials/snippet', 'pagination' );
+							while( $query->have_posts() ) : $query->the_post();
+								get_template_part( 'partials/content', 'listings' );
+							endwhile;
+
+							// get_template_part( 'partials/snippet', 'pagination' );
+
+						endif;
 
 					?>
 
