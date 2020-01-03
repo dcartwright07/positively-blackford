@@ -4,9 +4,7 @@
 
 	$page_object = get_queried_object();
 	$catName = $page_object->cat_name;
-
 	$page_id = get_queried_object_id();
-	// $catID = $page_id->
 
 ?>
 
@@ -41,13 +39,12 @@
 
 					<?php
 
-						// $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
-						$num_posts = 5;
+						$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 						$args = array(
 							'post_type'				=> array( 'post', 'video' ),
 							'category__in' 		=> array( $page_id ),
-							'posts_per_page' 	=> $num_posts,
-							// 'paged'          	=> $paged
+							'posts_per_page' 	=> 5,
+							'paged'          	=> $paged
 						);
 						$query =  new WP_Query( $args );
 
@@ -57,7 +54,7 @@
 								get_template_part( 'partials/content', 'listings' );
 							endwhile;
 
-							// get_template_part( 'partials/snippet', 'pagination' );
+							get_template_part( 'partials/snippet', 'pagination' );
 
 						endif;
 
