@@ -1,7 +1,7 @@
-# Positively Blackford News Website
+# Positively Blackford Theme
 
 ## Compilation Tool - WP Gulp
-This project is using [WP Gulp](https://github.com/ahmadawais/WPGulp) to compile all sass and javascript. Currently, there is not javascript setup up for compilation. There is only sass files.
+This project is using WP Gulp to compile all sass. Currently, the project is not using WP Gulp for its other features like javascript compilation. Visit this link for more details about [WP Gulp](https://github.com/ahmadawais/WPGulp).
 
 To install dependencies for WP Gulp, run the following commands:
 ```
