@@ -58,7 +58,6 @@
 							endwhile;
 
 							mg_pagination();
-							//get_template_part( 'partials/snippet', 'pagination' );
 
 						endif;
 
