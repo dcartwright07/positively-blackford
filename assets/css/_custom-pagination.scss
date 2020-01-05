@@ -1,7 +1,7 @@
 /* CUSTOM PAGINATION BY MG */
 
-.page-numbers {
-	ul & {
+ul {
+	&.page-numbers {
 		list-style: none;
 		margin: 0;
 		li {
@@ -11,6 +11,8 @@
 			text-align: center;
 		}
 	}
+}
+.page-numbers {
 	&:after {
 		content: ".";
 		display: block;
@@ -38,9 +40,7 @@
 			padding: 0;
 		}
 		&:hover {
-			color: #000;
-			background: $theme-color;
-			text-decoration: none;
+			@extend .current;
 		}
 	}
 	.current {
@@ -48,9 +48,7 @@
 		background: $theme-color;
 		text-decoration: none;
 		&:hover {
-			color: #000;
-			background: $theme-color;
-			text-decoration: none;
+			@extend .current;
 		}
 	}
 	&:hover {
