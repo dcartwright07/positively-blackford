@@ -41,13 +41,13 @@
 
 					<?php
 
-						// $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+						$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 						$num_posts = 5;
 						$args = array(
 							'post_type'				=> array( 'post', 'video' ),
 							'category__in' 		=> array( $page_id ),
 							'posts_per_page' 	=> $num_posts,
-							// 'paged'          	=> $paged
+							'paged'          	=> $paged
 						);
 						$query =  new WP_Query( $args );
 
@@ -57,6 +57,8 @@
 								get_template_part( 'partials/content', 'listings' );
 							endwhile;
 
+					        mg_pagination();
+					
 							// get_template_part( 'partials/snippet', 'pagination' );
 
 						endif;
