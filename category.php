@@ -6,7 +6,6 @@
 	$catName = $page_object->cat_name;
 
 	$page_id = get_queried_object_id();
-	// $catID = $page_id->
 
 ?>
 
