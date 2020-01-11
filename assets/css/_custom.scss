@@ -1,3 +1,5 @@
+@import "vendor/bootstrap";
+@import "layouts";
 /* #region General Styles */
 
 body {
@@ -24,6 +26,19 @@ ul {
 		}
 		#logo {
 			border-right: none;
+			@media (max-width: 575.98px) {
+				height: 75px;
+			}
+			img {
+				@media (max-width: 575.98px) {
+					height: 75px;
+				}
+			}
+		}
+		#primary-menu-trigger {
+			@media (max-width: 575.98px) {
+				top: 14px;
+			}
 		}
 	}
 }
