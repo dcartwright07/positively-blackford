@@ -9795,9 +9795,6 @@ h5{margin:10px 0 0 0}
 .table-responsive-sm{display:block;width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
 .table-responsive-sm>.table-bordered{border:0}
 .navbar-expand-sm>.container,.navbar-expand-sm>.container-fluid{padding-right:0;padding-left:0}
-#header.full-header #logo{height:75px}
-#header.full-header #logo img{height:75px}
-#header.full-header #primary-menu-trigger{top:14px}
 }@media all and (max-width:240px){#toast-container>div{padding:10px 15px;width:11em}
 #toast-container .toast-close-button{right:-0.2em;top:-0.2em}
 #toast-container .rtl .toast-close-button{left:-0.2em;right:.2em}
