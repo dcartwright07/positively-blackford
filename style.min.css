@@ -6474,7 +6474,10 @@ ul{margin-left:30px}
 #top-bar .top-links ul li{border-left:1px solid #ddd}
 #top-bar .top-links ul li:hover{background-color:#74bad4}
 #top-bar .top-links ul li a:hover{color:#000}
-#top-bar #top-social li{border-left:1px solid #ddd}
+#top-bar .top-right-links ul li{border-right:1px solid #ddd;border-left:0}
+#top-bar .top-right-links ul li:first-child{border:0;padding-right:10px}
+#top-bar .top-right-links ul li:last-child{border-right:0}
+#top-bar .top-right-links ul li.no-hover:hover{background-color:transparent}
 .fluid-width-video-wrapper{margin-top:20px;margin-bottom:20px;padding:28% !important}
 .entry-image .fluid-width-video-wrapper{margin-top:0;margin-bottom:0}
 .ipost .entry-title h3,.ipost .entry-title h4{font-size:1.125rem}

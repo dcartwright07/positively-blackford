@@ -58,9 +58,24 @@ ul {
 			}
 		}
 	}
-	#top-social {
-		li {
-			border-left: 1px solid #ddd;
+	.top-right-links {
+		ul {
+			li {
+				border-right: 1px solid #ddd;
+				border-left: none;
+				&:first-child {
+					border: none;
+					padding-right: 10px;
+				}
+				&:last-child {
+					border-right: none;
+				}
+				&.no-hover {
+					&:hover {
+						background-color: transparent;
+					}
+				}
+			}
 		}
 	}
 }
