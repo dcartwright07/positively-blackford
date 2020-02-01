@@ -58,6 +58,11 @@ ul {
 			}
 		}
 	}
+	.top-left-links {
+		@media (max-width: 991.98px) {
+			display: none;
+		}
+	}
 	.top-right-links {
 		ul {
 			li {
@@ -73,6 +78,9 @@ ul {
 				&.no-hover {
 					&:hover {
 						background-color: transparent;
+					}
+					@media (max-width: 575.98px) {
+						display: none;
 					}
 				}
 			}

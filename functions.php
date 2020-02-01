@@ -52,6 +52,7 @@ function pb_theme_js() {
 
 	wp_enqueue_script( 'plugins_js', get_template_directory_uri() . '/assets/js/plugins.js', array( 'jquery' ), '',  true );
 	wp_enqueue_script( 'functions_js', get_template_directory_uri() . '/assets/js/functions.js', array( 'jquery' ), '',  true );
+	wp_enqueue_script( 'custom_js', get_template_directory_uri() . '/assets/js/custom.js', array( 'jquery' ), '',  true );
 
 }
 add_action( 'wp_enqueue_scripts', 'pb_theme_js' );

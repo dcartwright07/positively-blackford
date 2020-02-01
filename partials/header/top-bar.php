@@ -2,7 +2,7 @@
 ============================================= -->
 <div id="top-bar">
 
-	<div class="col_half nobottommargin">
+	<div class="col_half nobottommargin top-left-links">
 
 		<!-- Top Links
 		============================================= -->
@@ -20,11 +20,11 @@
 
 	</div>
 
-	<div class="col_half fright col_last nobottommargin">
+	<div id="mobile-top-bar" class="col_half fright col_last nobottommargin top-right-links">
 
 		<!-- Top Right Links
 		============================================= -->
-		<div class="top-links top-right-links">
+		<div class="top-links">
 			<?php
 
 				$topRightMenuArgs = array(
