@@ -1,4 +1,4 @@
-<div class="col_three_fifth bottommargin-lg">
+<div class="col_full bottommargin-lg">
 	<div class="fslider flex-thumb-grid grid-6" data-speed="500" data-arrows="true" data-thumbs="false" data-easing="easeOutQuad">
 		<div class="flexslider">
 			<div class="slider-wrap">
@@ -50,24 +50,5 @@
 	</div>
 </div>
 
-<div class="col_two_fifth bottommargin-lg col_last">
-	<?php
-
-	if( !wp_is_mobile() ) :
-
-		if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post();
-			$featured = get_field( 'featured_story' );
-			if( $featured == 'yes' ) :
-
-		?>
-		<div class="spost clearfix">
-			<div class="entry-c">
-				<div class="entry-title">
-					<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-				</div>
-			</div>
-		</div>
-	<?php endif; endwhile; endif; endif; ?>
-</div>
 
 <div class="clear"></div>

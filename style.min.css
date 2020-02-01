@@ -6481,6 +6481,7 @@ ul{margin-left:30px}
 .fluid-width-video-wrapper{margin-top:20px;margin-bottom:20px;padding:28% !important}
 .entry-image .fluid-width-video-wrapper{margin-top:0;margin-bottom:0}
 .ipost .entry-title h3,.ipost .entry-title h4{font-size:1.125rem}
+#content .content-wrap{padding-top:40px}
 .copyright-links li{display:inline}
 ul.page-numbers{list-style:none;margin:0}
 ul.page-numbers li{display:block;float:left;margin:0 4px 4px 0;text-align:center}
@@ -6969,6 +6970,9 @@ ul.page-numbers li{display:block;float:left;margin:0 4px 4px 0;text-align:center
 .dark .nav-tabs.nav-justified>.active>a,.dark .nav-tabs.nav-justified>.active>a:hover,.dark .nav-tabs.nav-justified>.active>a:focus{border-bottom-color:#383838}
 .dark .nav-tabs-justified>li>a{border-bottom-color:rgba(255,255,255,0.15)}
 .dark .nav-tabs-justified>.active>a,.dark .nav-tabs-justified>.active>a:hover,.dark .nav-tabs-justified>.active>a:focus{border-bottom-color:#383838}
+.text-overlay{padding:50px 15px 25px}
+.text-overlay-title h3,.text-overlay-title .ipost .entry-title h4,.ipost .entry-title .text-overlay-title h4{font-size:24px}
+.text-overlay-meta{font-size:14px}
 }@media only screen and (min-width:768px) and (max-width:991.98px){.swiper_wrapper:not(.full-screen):not(.canvas-slider-grid),.swiper_wrapper:not(.full-screen):not(.canvas-slider-grid) .swiper-slide{height:400px !important}
 .sidebar-widgets-wrap{position:relative;margin:0 -20px -40px -20px}
 .sidebar-widgets-wrap .widget{display:inline-block;vertical-align:top;float:none;width:49.6%;margin:0 0 40px 0;padding-top:0;padding-left:20px;padding-right:20px;border-top:0}

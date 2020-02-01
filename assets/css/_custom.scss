@@ -112,6 +112,28 @@ ul {
 		}
 	}
 }
+#content {
+	.content-wrap {
+		padding-top: 40px;
+	}
+}
+.text-overlay {
+	@media (min-width: 768px) {
+		padding: 50px 15px 25px;
+	}
+}
+.text-overlay-title {
+	h3 {
+		@media (min-width: 768px) {
+			font-size: 24px;
+		}
+	}
+}
+.text-overlay-meta {
+	@media (min-width: 768px) {
+		font-size: 14px;
+	}
+}
 
 /* #endregion */
 
