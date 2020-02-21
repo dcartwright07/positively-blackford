@@ -6389,9 +6389,9 @@ h3.card-title{font-size:1.125rem}
 ul.page-numbers{list-style:none;margin:0}
 ul.page-numbers li{display:block;float:left;margin:0 4px 4px 0;text-align:center}
 .page-numbers:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}
-.page-numbers span,.page-numbers a{line-height:1.6em;display:block;padding:5px 10px;height:35px;border-radius:5px;font-size:14px;text-decoration:none;font-weight:400;cursor:pointer;border:1px solid #ddd;color:#888}
+.page-numbers span,.page-numbers a{line-height:1.6em;display:block;padding:5px 10px;height:35px;border-radius:5px;font-size:14px;text-decoration:none;font-weight:400;cursor:pointer;border:1px solid #ccc;color:#888}
 .page-numbers a span,.page-numbers a a{padding:0}
-.page-numbers .current,.page-numbers a:hover,.page-numbers .current:hover{color:#000;background:#00487c;text-decoration:none}
+.page-numbers .current,.page-numbers a:hover,.page-numbers .current:hover{color:#fff;background:#00487c;text-decoration:none}
 .page-numbers:hover{text-decoration:none}
 @media(prefers-reduced-motion:reduce){.form-control{-webkit-transition:none;transition:none}
 .btn{-webkit-transition:none;transition:none}
