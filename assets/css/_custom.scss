@@ -12,6 +12,14 @@ ul {
 .btn {
 	padding: 10px 30px;
 }
+.grey-background {
+	background-color: #f2f2f2;
+	.fancy-title {
+		h2 {
+			background-color: #f2f2f2;
+		}
+	}
+}
 
 /* #endregion */
 
@@ -103,7 +111,6 @@ ul {
 /* #endregion */
 
 /* #region Body Adjustment */
-
 .fluid-width-video-wrapper {
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -121,7 +128,7 @@ h3 {
 }
 .card {
 	margin-bottom: 40px !important;
-	background-color: #f9f9f9;
+	// background-color: #f9f9f9;
 	p {
 		margin-bottom: 20px;
 	}
@@ -165,8 +172,24 @@ h3 {
 }
 #content {
 	.content-wrap {
-		padding-top: 40px;
+		padding: 40px 0;
 	}
+}
+.fancy-title {
+	text-align: center;
+	h2 {
+		padding-left: 15px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	&.title-border {
+		&:before {
+			border-top: 1px solid #ccc;
+		}
+	}
+}
+.col_full {
+	margin-bottom: 0 !important;
 }
 .text-overlay {
 	@media (min-width: 768px) {
@@ -183,6 +206,12 @@ h3 {
 .text-overlay-meta {
 	@media (min-width: 768px) {
 		font-size: 14px;
+	}
+}
+@media (max-width: 575.98px) {
+	.container, #header.full-header .container, .container-fullwidth {
+		padding-left: 15px !important;
+		padding-right: 15px !important;
 	}
 }
 

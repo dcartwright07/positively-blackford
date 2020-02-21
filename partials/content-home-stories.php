@@ -1,7 +1,7 @@
-<div class="col_full bottommargin-lg clearfix">
+<div class="col_full clearfix">
 
 	<div class="fancy-title title-border">
-		<h3>Latest Stories</h3>
+		<h2>Latest Stories</h2>
 	</div>
 
 	<?php

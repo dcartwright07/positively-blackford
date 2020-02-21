@@ -6351,6 +6351,8 @@ img.mfp-img{width:auto;max-width:100%;height:auto;display:block;line-height:0;-w
 body{font-size:1rem}
 ul{margin-left:30px}
 .btn{padding:10px 30px}
+.grey-background{background-color:#f2f2f2}
+.grey-background .fancy-title h2{background-color:#f2f2f2}
 #header.full-header{border-bottom-color:#ddd}
 #header.full-header #primary-menu>ul{padding-right:0;margin-right:0;border-right:0}
 #header.full-header #primary-menu li:hover{background-color:#74bad4}
@@ -6367,7 +6369,7 @@ ul{margin-left:30px}
 .fluid-width-video-wrapper{margin-top:20px;margin-bottom:20px;padding:28% !important}
 .entry-image .fluid-width-video-wrapper{margin-top:0;margin-bottom:0}
 h3.card-title{font-size:1.125rem}
-.card{margin-bottom:40px !important;background-color:#f9f9f9}
+.card{margin-bottom:40px !important}
 .card p{margin-bottom:20px}
 .card-title a{color:#222}
 .card-list{list-style:none;font-family:"Crete Round",serif;font-size:13px;margin-left:0;margin-bottom:10px}
@@ -6376,7 +6378,11 @@ h3.card-title{font-size:1.125rem}
 .card-list li:first-child:before{content:'';margin:0}
 .card-footer{background-color:transparent;border-top:0;margin-bottom:20px}
 .card-footer .btn{background-color:#00487c;color:#fff}
-#content .content-wrap{padding-top:40px}
+#content .content-wrap{padding:40px 0}
+.fancy-title{text-align:center}
+.fancy-title h2{padding-left:15px;padding-top:20px;padding-bottom:20px}
+.fancy-title.title-border:before{border-top:1px solid #ccc}
+.col_full{margin-bottom:0 !important}
 #footer a:hover{color:#74bad4}
 #copyrights a{color:#74bad4}
 .copyright-links li{display:inline}
@@ -7723,6 +7729,7 @@ h5{margin:10px 0 0 0}
 #header.full-header #logo img{height:75px}
 #header.full-header #primary-menu-trigger{top:14px}
 #top-bar .top-right-links ul li.no-hover{display:none}
+.container,#header.full-header .container,.container-fullwidth{padding-left:15px !important;padding-right:15px !important}
 }@media all and (max-width:240px){#toast-container>div{padding:10px 15px;width:11em}
 #toast-container .toast-close-button{right:-0.2em;top:-0.2em}
 #toast-container .rtl .toast-close-button{left:-0.2em;right:.2em}

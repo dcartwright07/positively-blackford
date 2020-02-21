@@ -1,7 +1,7 @@
 <div class="col_full bottommargin-lg clearfix">
 
 	<div class="fancy-title title-border">
-		<h3>Featured Videos</h3>
+		<h2>Featured Videos</h2>
 	</div>
 
 	<?php
