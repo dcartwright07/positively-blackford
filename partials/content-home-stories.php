@@ -38,7 +38,7 @@
 			<p class="card-text"><?php echo get_the_excerpt(); ?></p>
 		</div>
 		<div class="card-footer text-center">
-			<a class="btn btn-primary" href="<?php the_permalink(); ?>" role="button">Continue Reading</a>
+			<a class="btn" href="<?php the_permalink(); ?>" role="button">Continue Reading</a>
 		</div>
 	</div>
 

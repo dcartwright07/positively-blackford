@@ -1,3 +1,5 @@
+@import 'variables';
+
 /* #region General Styles */
 
 body {
@@ -7,11 +9,13 @@ body {
 ul {
 	margin-left: 30px;
 }
+.btn {
+	padding: 10px 30px;
+}
 
 /* #endregion */
 
 /* #region Header Adjustment */
-
 #header {
 	&.full-header {
 		border-bottom-color: #ddd;
@@ -20,6 +24,14 @@ ul {
 				padding-right: 0;
 				margin-right: 0;
 				border-right: none;
+			}
+			li {
+				&:hover {
+					background-color: $secondary-color;
+					> a {
+						color: $primary-menu-font-color;
+					}
+				}
 			}
 		}
 		#logo {
@@ -48,7 +60,7 @@ ul {
 			li {
 				border-left: 1px solid #ddd;
 				&:hover {
-					background-color: $theme-color;
+					background-color: $secondary-color;
 				}
 				a {
 					&:hover {
@@ -109,8 +121,14 @@ h3 {
 }
 .card {
 	margin-bottom: 40px !important;
+	background-color: #f9f9f9;
 	p {
 		margin-bottom: 20px;
+	}
+}
+.card-title {
+	a {
+		color: #222;
 	}
 }
 .card-list {
@@ -140,6 +158,10 @@ h3 {
 	background-color: transparent;
 	border-top: none;
 	margin-bottom: 20px;
+	.btn {
+		background-color: $theme-color;
+		color: #fff;
+	}
 }
 #content {
 	.content-wrap {
@@ -168,6 +190,19 @@ h3 {
 
 /* #region Footer Adjustment */
 
+#footer {
+	a {
+		&:hover {
+			color: $secondary-color;
+		}
+	}
+}
+
+#copyrights {
+	a {
+		color: $secondary-color;
+	}
+}
 .copyright-links {
 	li {
 		display: inline;
