@@ -102,15 +102,44 @@ ul {
 	}
 }
 
-.ipost {
-	.entry-title {
-		h3 {
-			font-size: 1.125rem;
+h3 {
+	&.card-title {
+		font-size: 1.125rem;
+	}
+}
+.card {
+	margin-bottom: 40px !important;
+	p {
+		margin-bottom: 20px;
+	}
+}
+.card-list {
+	list-style: none;
+	font-family: "Crete Round", serif;
+	font-size: 13px;
+	margin-left: 0;
+	margin-bottom: 10px;
+	li {
+		display: inline;
+		margin-right: 5px;
+		&:before {
+			content: '/';
+			display: inline-block;
+			margin-right: 10px;
+			opacity: 0.5;
 		}
-		h4 {
-			@extend h3;
+		&:first-child {
+			&:before {
+				content: '';
+				margin: 0;
+			}
 		}
 	}
+}
+.card-footer {
+	background-color: transparent;
+	border-top: none;
+	margin-bottom: 20px;
 }
 #content {
 	.content-wrap {

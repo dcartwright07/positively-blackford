@@ -5,7 +5,7 @@ article,aside,figcaption,figure,footer,header,hgroup,main,nav,section{display:bl
 body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-size:1rem;font-weight:400;line-height:1.5;color:#212529;text-align:left;background-color:#fff}
 [tabindex="-1"]:focus{outline:0 !important}
 hr{-webkit-box-sizing:content-box;box-sizing:content-box;height:0;overflow:visible}
-h1,h2,h3,.ipost .entry-title h4,h4,h5,h6{margin-top:0;margin-bottom:.5rem}
+h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:.5rem}
 p{margin-top:0;margin-bottom:1rem}
 abbr[title],abbr[data-original-title]{text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted;cursor:help;border-bottom:0;-webkit-text-decoration-skip-ink:none;text-decoration-skip-ink:none}
 address{margin-bottom:1rem;font-style:normal;line-height:inherit}
@@ -56,10 +56,10 @@ output{display:inline-block}
 summary{display:list-item;cursor:pointer}
 template{display:none}
 [hidden]{display:none !important}
-h1,h2,h3,.ipost .entry-title h4,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{margin-bottom:.5rem;font-weight:500;line-height:1.2}
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{margin-bottom:.5rem;font-weight:500;line-height:1.2}
 h1,.h1{font-size:2.5rem}
 h2,.h2{font-size:2rem}
-h3,.ipost .entry-title h4,.h3{font-size:1.75rem}
+h3,.h3{font-size:1.75rem}
 h4,.h4{font-size:1.5rem}
 h5,.h5{font-size:1.25rem}
 h6,.h6{font-size:1rem}
@@ -1129,17 +1129,17 @@ a:hover{color:#222}
 a img{border:0}
 img{max-width:100%}
 iframe{border:none !important}
-h1,h2,h3,.ipost .entry-title h4,h4,h5,h6{color:#444;font-weight:600;line-height:1.5;margin:0 0 30px 0;font-family:"Raleway",sans-serif}
+h1,h2,h3,h4,h5,h6{color:#444;font-weight:600;line-height:1.5;margin:0 0 30px 0;font-family:"Raleway",sans-serif}
 h5,h6{margin-bottom:20px}
 h1{font-size:36px}
 h2{font-size:30px}
-h3,.ipost .entry-title h4{font-size:24px}
+h3{font-size:24px}
 h4{font-size:18px}
 h5{font-size:14px}
 h6{font-size:12px}
 h4{font-weight:600}
 h5,h6{font-weight:bold}
-h1>span:not(.nocolor),.page-numbers h1>a:not(.nocolor),h2>span:not(.nocolor),.page-numbers h2>a:not(.nocolor),h3>span:not(.nocolor),.ipost .entry-title h4>span:not(.nocolor),.page-numbers h3>a:not(.nocolor),.ipost .entry-title .page-numbers h4>a:not(.nocolor),.page-numbers .ipost .entry-title h4>a:not(.nocolor),h4>span:not(.nocolor),.page-numbers h4>a:not(.nocolor),h5>span:not(.nocolor),.page-numbers h5>a:not(.nocolor),h6>span:not(.nocolor),.page-numbers h6>a:not(.nocolor){color:#74bad4}
+h1>span:not(.nocolor),.page-numbers h1>a:not(.nocolor),h2>span:not(.nocolor),.page-numbers h2>a:not(.nocolor),h3>span:not(.nocolor),.page-numbers h3>a:not(.nocolor),h4>span:not(.nocolor),.page-numbers h4>a:not(.nocolor),h5>span:not(.nocolor),.page-numbers h5>a:not(.nocolor),h6>span:not(.nocolor),.page-numbers h6>a:not(.nocolor){color:#74bad4}
 p,pre,ul,ol,dl,dd,blockquote,address,table,fieldset,form{margin-bottom:30px}
 small{font-family:"Lato",sans-serif}
 #wrapper{position:relative;float:none;width:1220px;margin:0 auto;background-color:#FFF;box-shadow:0 0 10px rgba(0,0,0,0.1);-moz-box-shadow:0 0 10px rgba(0,0,0,0.1);-webkit-box-shadow:0 0 10px rgba(0,0,0,0.1)}
@@ -1700,9 +1700,9 @@ body:not(.device-touch):not(.device-sm):not(.device-xs) .portfolio-notitle .port
 .portfolio-notitle .portfolio-item,.portfolio-notitle .iportfolio{overflow:hidden}
 .portfolio-item .portfolio-image,.portfolio-item .portfolio-image a,.portfolio-item .portfolio-image img{display:block;width:100%;height:auto}
 .portfolio-desc{z-index:3;padding:15px 5px 10px}
-.portfolio-desc h3,.portfolio-desc .ipost .entry-title h4,.ipost .entry-title .portfolio-desc h4{margin:0;padding:0;font-size:19px}
-.portfolio-desc h3 a,.portfolio-desc .ipost .entry-title h4 a,.ipost .entry-title .portfolio-desc h4 a{color:#222}
-.portfolio-desc h3 a:hover,.portfolio-desc .ipost .entry-title h4 a:hover,.ipost .entry-title .portfolio-desc h4 a:hover{color:#74bad4}
+.portfolio-desc h3{margin:0;padding:0;font-size:19px}
+.portfolio-desc h3 a{color:#222}
+.portfolio-desc h3 a:hover{color:#74bad4}
 .portfolio-desc span,.portfolio-desc .page-numbers a,.page-numbers .portfolio-desc a{display:block;margin-top:3px;color:#888}
 .portfolio-desc span a,.portfolio-desc .page-numbers a a,.page-numbers .portfolio-desc a a{color:#888}
 .portfolio-desc span a:hover,.portfolio-desc .page-numbers a a:hover,.page-numbers .portfolio-desc a a:hover{color:#000}
@@ -1719,7 +1719,7 @@ body.device-touch.device-sm .portfolio-notitle .portfolio-desc,body.device-touch
 .portfolio.portfolio-full{width:100.4%}
 .portfolio-full .portfolio-item{overflow:hidden !important}
 .portfolio-full .portfolio-desc{padding:15px}
-.postcontent .portfolio-desc h3,.postcontent .portfolio-desc .ipost .entry-title h4,.ipost .entry-title .postcontent .portfolio-desc h4{font-size:17px}
+.postcontent .portfolio-desc h3{font-size:17px}
 .postcontent .portfolio-desc span,.postcontent .portfolio-desc .page-numbers a,.page-numbers .postcontent .portfolio-desc a{font-size:12px}
 .postcontent .portfolio-notitle .portfolio-desc{height:70px;bottom:-71px}
 .postcontent .portfolio-notitle .portfolio-item:hover .portfolio-overlay a{margin-top:-50px !important}
@@ -1729,7 +1729,7 @@ body.device-touch.device-sm .portfolio-notitle .portfolio-desc,body.device-touch
 .bothsidebar .portfolio-desc{display:none !important}
 .portfolio.portfolio-3{margin:0 -15px -15px 0}
 .portfolio-3 .portfolio-item{width:33.33333333%;padding:0 15px 15px 0}
-.postcontent .portfolio-3 .portfolio-desc h3,.postcontent .portfolio-3 .portfolio-desc .ipost .entry-title h4,.ipost .entry-title .postcontent .portfolio-3 .portfolio-desc h4{font-size:18px}
+.postcontent .portfolio-3 .portfolio-desc h3{font-size:18px}
 .postcontent .portfolio-3 .portfolio-desc span,.postcontent .portfolio-3 .portfolio-desc .page-numbers a,.page-numbers .postcontent .portfolio-3 .portfolio-desc a{font-size:13px}
 .postcontent .portfolio-3.portfolio-notitle .portfolio-desc{height:72px;bottom:-73px}
 .postcontent .portfolio-3.portfolio-notitle .portfolio-item:hover .portfolio-overlay a{margin-top:-40px !important}
@@ -1737,7 +1737,7 @@ body.device-touch.device-sm .portfolio-notitle .portfolio-desc,body.device-touch
 .bothsidebar .portfolio.portfolio-3{margin:0 -15px -bs -15px -bs 0}
 .bothsidebar .portfolio-3 .portfolio-item{padding:0 11px 11px 0}
 .bothsidebar .portfolio-3 .portfolio-desc{display:block !important}
-.bothsidebar .portfolio-3 .portfolio-desc h3,.bothsidebar .portfolio-3 .portfolio-desc .ipost .entry-title h4,.ipost .entry-title .bothsidebar .portfolio-3 .portfolio-desc h4{font-size:15px}
+.bothsidebar .portfolio-3 .portfolio-desc h3{font-size:15px}
 .bothsidebar .portfolio-3 .portfolio-desc span,.bothsidebar .portfolio-3 .portfolio-desc .page-numbers a,.page-numbers .bothsidebar .portfolio-3 .portfolio-desc a{font-size:12px}
 .bothsidebar .portfolio-3.portfolio-notitle .portfolio-desc{height:68px;bottom:-69px}
 .bothsidebar .portfolio-3.portfolio-notitle .portfolio-item:hover .portfolio-overlay a{margin-top:-50px !important}
@@ -1745,19 +1745,19 @@ body.device-touch.device-sm .portfolio-notitle .portfolio-desc,body.device-touch
 .portfolio.portfolio-2{margin:0 -20px -20px 0}
 .portfolio-2 .portfolio-item{width:50%;padding:0 20px 20px 0}
 .portfolio-2 .portfolio-desc{padding:20px 5px 10px}
-.portfolio-2 .portfolio-desc h3,.portfolio-2 .portfolio-desc .ipost .entry-title h4,.ipost .entry-title .portfolio-2 .portfolio-desc h4{font-size:21px}
+.portfolio-2 .portfolio-desc h3{font-size:21px}
 .portfolio-2 .portfolio-desc span,.portfolio-2 .portfolio-desc .page-numbers a,.page-numbers .portfolio-2 .portfolio-desc a{margin-top:4px;font-size:14px}
 .portfolio-2.portfolio-nomargin .portfolio-desc{padding:20px 15px 20px}
 .portfolio-2.portfolio-notitle .portfolio-desc{height:90px;bottom:-91px}
 .portfolio-2.portfolio-full.portfolio-notitle .portfolio-desc,.portfolio-2.portfolio-nomargin.portfolio-notitle .portfolio-desc{bottom:-90px}
-.postcontent .portfolio-2 .portfolio-desc h3,.postcontent .portfolio-2 .portfolio-desc .ipost .entry-title h4,.ipost .entry-title .postcontent .portfolio-2 .portfolio-desc h4{font-size:21px}
+.postcontent .portfolio-2 .portfolio-desc h3{font-size:21px}
 .postcontent .portfolio-2 .portfolio-desc span,.postcontent .portfolio-2 .portfolio-desc .page-numbers a,.page-numbers .postcontent .portfolio-2 .portfolio-desc a{font-size:14px}
 .postcontent .portfolio-2.portfolio-nomargin .portfolio-desc{padding-bottom:20px}
 .postcontent .portfolio-2.portfolio-notitle .portfolio-desc{height:90px;bottom:-91px}
 .postcontent .portfolio-2.portfolio-notitle .portfolio-item:hover .portfolio-overlay a{margin-top:-40px !important}
 .postcontent .portfolio-2.portfolio-full.portfolio-notitle .portfolio-desc,.postcontent .portfolio-2.portfolio-nomargin.portfolio-notitle .portfolio-desc{bottom:-90px}
 .bothsidebar .portfolio-2 .portfolio-desc{display:block !important;padding-top:15px;padding-bottom:0}
-.bothsidebar .portfolio-2 .portfolio-desc h3,.bothsidebar .portfolio-2 .portfolio-desc .ipost .entry-title h4,.ipost .entry-title .bothsidebar .portfolio-2 .portfolio-desc h4{font-size:19px}
+.bothsidebar .portfolio-2 .portfolio-desc h3{font-size:19px}
 .bothsidebar .portfolio-2 .portfolio-desc span,.bothsidebar .portfolio-2 .portfolio-desc .page-numbers a,.page-numbers .bothsidebar .portfolio-2 .portfolio-desc a{font-size:13px}
 .bothsidebar .portfolio-2.portfolio-nomargin .portfolio-desc{padding-bottom:15px}
 .bothsidebar .portfolio-2.portfolio-notitle .portfolio-desc{height:75px;bottom:-76px}
@@ -1765,21 +1765,21 @@ body.device-touch.device-sm .portfolio-notitle .portfolio-desc,body.device-touch
 .bothsidebar .portfolio-2.portfolio-full.portfolio-notitle .portfolio-desc,.bothsidebar .portfolio-2.portfolio-nomargin.portfolio-notitle .portfolio-desc{bottom:-75px}
 .portfolio.portfolio-5{margin:0 -10px -10px 0}
 .portfolio-5 .portfolio-item{width:50%;padding:0 10px 10px 0}
-.portfolio-5 .portfolio-desc h3,.portfolio-5 .portfolio-desc .ipost .entry-title h4,.ipost .entry-title .portfolio-5 .portfolio-desc h4{font-size:17px}
+.portfolio-5 .portfolio-desc h3{font-size:17px}
 .portfolio-5.portfolio-notitle .portfolio-desc{height:71px;bottom:-72px}
 .portfolio-5.portfolio-notitle .portfolio-item:hover .portfolio-overlay a{margin-top:-30px !important}
 .portfolio-5.portfolio-full.portfolio-notitle .portfolio-desc,.portfolio-5.portfolio-nomargin.portfolio-notitle .portfolio-desc{bottom:-71px}
 .postcontent .portfolio.portfolio-5{margin:0}
 .postcontent .portfolio-5 .portfolio-item{padding:0}
 .postcontent .portfolio-5 .portfolio-desc{padding:15px 10px}
-.postcontent .portfolio-5 .portfolio-desc h3,.postcontent .portfolio-5 .portfolio-desc .ipost .entry-title h4,.ipost .entry-title .postcontent .portfolio-5 .portfolio-desc h4{font-size:15px}
+.postcontent .portfolio-5 .portfolio-desc h3{font-size:15px}
 .postcontent .portfolio-5 .portfolio-desc span,.postcontent .portfolio-5 .portfolio-desc .page-numbers a,.page-numbers .postcontent .portfolio-5 .portfolio-desc a{font-size:12px}
 .postcontent .portfolio-5.portfolio-notitle .portfolio-desc{height:68px;bottom:-69px}
 .postcontent .portfolio-5.portfolio-notitle .portfolio-item:hover .portfolio-overlay a{margin-top:-50px !important}
 .postcontent .portfolio-5.portfolio-full.portfolio-notitle .portfolio-desc,.postcontent .portfolio-5.portfolio-nomargin.portfolio-notitle .portfolio-desc{bottom:-68px}
 .portfolio.portfolio-6{margin:0 -6px -6px 0}
 .portfolio-6 .portfolio-item{width:16.66666667%;padding:0 6px 6px 0}
-.portfolio-6 .portfolio-desc h3,.portfolio-6 .portfolio-desc .ipost .entry-title h4,.ipost .entry-title .portfolio-6 .portfolio-desc h4{font-size:15px}
+.portfolio-6 .portfolio-desc h3{font-size:15px}
 .portfolio-6 .portfolio-desc span,.portfolio-6 .portfolio-desc .page-numbers a,.page-numbers .portfolio-6 .portfolio-desc a{font-size:12px}
 .portfolio-6.portfolio-notitle .portfolio-desc{height:68px;bottom:-69px}
 .portfolio-6.portfolio-notitle .portfolio-item:hover .portfolio-overlay a{margin-top:-40px !important}
@@ -1789,7 +1789,7 @@ body.device-touch.device-sm .portfolio-notitle .portfolio-desc,body.device-touch
 .portfolio-1 .portfolio-item .portfolio-image{float:left;margin-right:0;width:65%;height:auto}
 .portfolio-1 .portfolio-item.alt .portfolio-image{float:right;margin:0}
 .portfolio-1 .portfolio-desc{float:left;width:35%;padding:10px 0 10px 40px}
-.portfolio-1 .portfolio-desc h3,.portfolio-1 .portfolio-desc .ipost .entry-title h4,.ipost .entry-title .portfolio-1 .portfolio-desc h4{font-size:22px}
+.portfolio-1 .portfolio-desc h3{font-size:22px}
 .portfolio-1 .portfolio-desc span,.portfolio-1 .portfolio-desc .page-numbers a,.page-numbers .portfolio-1 .portfolio-desc a{margin-top:6px;font-size:14px}
 .portfolio-1 .portfolio-desc p{margin:20px 0 25px;font-size:14px}
 .portfolio-1 .portfolio-desc li{margin:3px 0}
@@ -1827,9 +1827,9 @@ body:not(.device-touch):not(.device-sm):not(.device-xs) .portfolio-1.portfolio-f
 .portfolio.portfolio-parallax .portfolio-item:hover .portfolio-desc{opacity:1}
 .portfolio.portfolio-parallax .portfolio-item:hover .portfolio-desc .portfolio-divider div{width:120px}
 .portfolio.portfolio-parallax .portfolio-desc{position:absolute;top:50%;left:0;margin-top:-57px;width:100%;text-align:center;text-shadow:1px 1px 1px rgba(0,0,0,0.15);padding:0;opacity:0}
-.portfolio.portfolio-parallax .portfolio-desc h3,.portfolio.portfolio-parallax .portfolio-desc .ipost .entry-title h4,.ipost .entry-title .portfolio.portfolio-parallax .portfolio-desc h4{font-size:44px;font-weight:300;letter-spacing:-1px}
-.portfolio.portfolio-parallax .portfolio-desc h3 a,.portfolio.portfolio-parallax .portfolio-desc .ipost .entry-title h4 a,.ipost .entry-title .portfolio.portfolio-parallax .portfolio-desc h4 a{color:#FFF}
-.portfolio.portfolio-parallax .portfolio-desc h3 a:hover,.portfolio.portfolio-parallax .portfolio-desc .ipost .entry-title h4 a:hover,.ipost .entry-title .portfolio.portfolio-parallax .portfolio-desc h4 a:hover{color:#DDD}
+.portfolio.portfolio-parallax .portfolio-desc h3{font-size:44px;font-weight:300;letter-spacing:-1px}
+.portfolio.portfolio-parallax .portfolio-desc h3 a{color:#FFF}
+.portfolio.portfolio-parallax .portfolio-desc h3 a:hover{color:#DDD}
 .portfolio.portfolio-parallax .portfolio-desc span,.portfolio.portfolio-parallax .portfolio-desc .page-numbers a,.page-numbers .portfolio.portfolio-parallax .portfolio-desc a{margin-top:12px;font-size:16px;color:#CCC}
 .portfolio.portfolio-parallax .portfolio-desc span a,.portfolio.portfolio-parallax .portfolio-desc .page-numbers a a,.page-numbers .portfolio.portfolio-parallax .portfolio-desc a a{color:#DDD}
 .portfolio.portfolio-parallax .portfolio-desc span a:hover,.portfolio.portfolio-parallax .portfolio-desc .page-numbers a a:hover,.page-numbers .portfolio.portfolio-parallax .portfolio-desc a a:hover{color:#BBB}
@@ -1847,8 +1847,8 @@ body:not(.device-touch):not(.device-sm):not(.device-xs) .portfolio.portfolio-par
 .portfolio-overlay .portfolio-desc{position:relative;padding:0 !important;margin:0;text-align:center}
 .portfolio-overlay .portfolio-desc a{display:inline;position:relative;top:0;left:0;margin:0;font-size:inherit;width:auto !important;height:auto !important;line-height:1;background-color:transparent !important;text-shadow:1px 1px 1px rgba(0,0,0,0.15)}
 .portfolio-overlay .portfolio-desc a:hover{background:transparent}
-.portfolio-overlay .portfolio-desc h3,.portfolio-overlay .portfolio-desc .ipost .entry-title h4,.ipost .entry-title .portfolio-overlay .portfolio-desc h4{font-weight:600;color:#f5f5f5 !important;line-height:1}
-.portfolio-overlay .portfolio-desc h3 a,.portfolio-overlay .portfolio-desc .ipost .entry-title h4 a,.ipost .entry-title .portfolio-overlay .portfolio-desc h4 a{color:#f5f5f5 !important}
+.portfolio-overlay .portfolio-desc h3{font-weight:600;color:#f5f5f5 !important;line-height:1}
+.portfolio-overlay .portfolio-desc h3 a{color:#f5f5f5 !important}
 .portfolio-overlay .portfolio-desc span,.portfolio-overlay .portfolio-desc .page-numbers a,.page-numbers .portfolio-overlay .portfolio-desc a{margin-top:7px;color:#DDD !important}
 .portfolio-overlay .portfolio-desc span a,.portfolio-overlay .portfolio-desc .page-numbers a a,.page-numbers .portfolio-overlay .portfolio-desc a a{color:#DDD !important;font-size:inherit}
 .portfolio-overlay .portfolio-desc ~ a{display:inline-block;position:relative;top:0;left:0;margin:20px 0 0 !important}
@@ -1988,9 +1988,9 @@ body:not(.device-touch) .entry-link{-webkit-transition:background-color .3s ease
 .postcontent .post-timeline .entry-timeline{display:block;border:3px solid #CCC;background-color:#FFF;padding-top:10px;text-indent:0;top:20px;left:-100px;right:auto;width:64px;height:64px;font-size:24px}
 .postcontent .post-timeline .entry-timeline div.timeline-divider{top:29px;left:64px;width:32px}
 .ipost .entry-image img{border-radius:0}
-.ipost .entry-title h3,.ipost .entry-title h4,.ipost .entry-title h4{margin:0;font-size:16px;font-weight:600}
-.ipost .entry-title h3 a,.ipost .entry-title h4 a,.ipost .entry-title h4 a{color:#333}
-.ipost .entry-title h3 a:hover,.ipost .entry-title h4 a:hover,.ipost .entry-title h4 a:hover{color:#74bad4}
+.ipost .entry-title h3,.ipost .entry-title h4{margin:0;font-size:16px;font-weight:600}
+.ipost .entry-title h3 a,.ipost .entry-title h4 a{color:#333}
+.ipost .entry-title h3 a:hover,.ipost .entry-title h4 a:hover{color:#74bad4}
 .ipost .entry-title h4{font-size:15px}
 .ipost .entry-meta{margin-right:-10px}
 .ipost .entry-meta li{font-size:13px;margin-right:10px}
@@ -2071,123 +2071,6 @@ img.alignright,div.alignright{float:right;margin:5px 0 13px 20px}
 .wp-caption img,.wp-caption img a{display:block;margin:0}
 p.wp-caption-text{display:inline-block;margin:10px 0 0 0;padding:5px 10px;background-color:#EEE;border-radius:50px}
 .wp-smiley{max-height:13px;margin:0 !important}
-.shop{position:relative;margin:0 -20px -20px 0}
-.product{position:relative}
-.shop .product{position:relative;float:left;padding:0 20px 20px 0;width:25%}
-.product-image{position:relative;width:100%;height:auto;overflow:hidden}
-.product-image>a,.product-image .slide a,.product-image img{display:block;width:100%;height:100%}
-body:not(.device-touch):not(.device-sm):not(.device-xs) .product-image>a{-webkit-transition:all .5s ease;transition:all .5s ease}
-.product-image>a:nth-of-type(2){opacity:0;position:absolute;z-index:-1;top:0;left:0}
-.product-image:hover>a:nth-of-type(2){opacity:1;z-index:2}
-.product-desc{padding:15px 0;font-size:14px}
-.product-title{margin-bottom:7px}
-.product-title h3,.product-title .ipost .entry-title h4,.ipost .entry-title .product-title h4{margin:0;font-size:20px}
-.product-title h3 a,.product-title .ipost .entry-title h4 a,.ipost .entry-title .product-title h4 a,.single-product .product-title h2 a{color:#333}
-.product-title h3 a:hover,.product-title .ipost .entry-title h4 a:hover,.ipost .entry-title .product-title h4 a:hover,.single-product .product-title h2 a:hover{color:#74bad4}
-.product-price{font-size:18px;font-weight:700;color:#444;margin-bottom:4px}
-.product-price del{font-weight:400;font-size:90%;color:#888}
-.product-price ins{text-decoration:none;color:#74bad4}
-.product-overlay{position:absolute;width:100%;height:44px;line-height:44px;top:auto;bottom:-44px;left:0;z-index:6}
-.product-overlay a{display:block;float:left;width:50%;font-size:13px;color:#333;background-color:#f5f5f5;text-align:center;border-right:1px solid rgba(0,0,0,0.1)}
-.product-overlay a.item-quick-view{border-right:0}
-.product-overlay a i{position:relative;top:1px;font-size:14px;margin-right:3px}
-.product-overlay a:hover{background-color:#333;color:#FFF;text-shadow:1px 1px 1px rgba(0,0,0,0.2)}
-body:not(.device-touch):not(.device-sm):not(.device-xs) .product-overlay{-webkit-transition:bottom .3s ease-in-out;transition:bottom .3s ease-in-out}
-body:not(.device-touch):not(.device-sm):not(.device-xs) .product-overlay a{-webkit-transition:all .3s ease-in-out;transition:all .3s ease-in-out}
-.product:hover .product-overlay{bottom:0}
-.sale-flash{position:absolute;top:10px;left:10px;padding:6px 10px;background-color:#74bad4;color:#FFF;text-shadow:1px 1px 1px rgba(0,0,0,0.2);border-radius:3px;z-index:5}
-.sale-flash.out-of-stock{background-color:#777}
-.shop.product-3{margin:0 -30px -30px 0}
-.product-3 .product{padding:0 30px 30px 0;width:33.33333333%}
-.postcontent .shop.product-3{margin:0 -25px -25px 0}
-.postcontent .product-3 .product{padding:0 25px 25px 0}
-.postcontent .shop.product-2{margin:0 -40px -40px 0}
-.postcontent .product-2 .product{padding:0 40px 40px 0;width:50%}
-.bothsidebar .shop.product-2{margin:0 -40px -20px 0}
-.bothsidebar .product-2 .product{padding:0 40px 20px 0}
-.shop.product-1{margin:0 0 -40px 0}
-.product-1 .product{float:none;margin:0 0 40px 0;padding:0;width:100%}
-.product-1 .product.alt .product-image{float:right;margin:0 0 0 30px}
-.product-1 .product-image{float:left;width:300px;height:400px;margin-right:30px}
-.product-1 .product-desc{padding:0;position:relative;overflow:hidden}
-.product-1 .product-desc .product-price{font-size:20px}
-.product-1 .product-desc .product-rating{margin-bottom:15px}
-.product-1 .product-title h3,.product-1 .product-title .ipost .entry-title h4,.ipost .entry-title .product-1 .product-title h4{font-size:22px}
-.bothsidebar .product-1 .product{border-top:1px solid #f5f5f5;padding-top:40px}
-.bothsidebar .product-1 .product:first-child{border-top:0;padding-top:0}
-.bothsidebar .product-1 .product-image{width:240px;height:320px}
-.bothsidebar .product-1 .product-title h3,.bothsidebar .product-1 .product-title .ipost .entry-title h4,.ipost .entry-title .bothsidebar .product-1 .product-title h4{font-size:20px}
-.bothsidebar .product-1 .product-desc .product-price{font-size:16px}
-.single-product .product{width:100%;margin:0}
-.single-product .product-desc{padding:0}
-.single-product .product-desc .line{margin:20px 0}
-.single-product .product-title h2{font-size:28px;margin-bottom:8px}
-.single-product .product-price{float:left;font-size:24px;color:#74bad4;margin-bottom:0}
-.single-product .product-rating{float:right;position:relative;top:9px}
-.single-product .product-image,.single-product .product-image img{height:auto}
-.shop-quick-view-ajax,.portfolio-ajax-modal{position:relative;background-color:#FFF;width:800px;margin:0 auto}
-.quantity{float:left;margin-right:30px}
-.quantity input[type=number]::-webkit-inner-spin-button,.quantity input[type=number]::-webkit-outer-spin-button{-webkit-appearance:none;-moz-appearance:none;appearance:none;margin:0}
-.quantity .qty{float:left;width:50px;height:40px;line-height:40px;border:0;border-left:1px solid #DDD;border-right:1px solid #DDD;background-color:#EEE;text-align:center;margin-bottom:0}
-.quantity .plus,.quantity .minus{display:block;float:left;cursor:pointer;border:0 transparent;padding:0;width:36px;height:40px;line-height:40px;text-align:center;background-color:#EEE;font-size:16px;font-weight:bold;-webkit-transition:background-color .2s linear;transition:background-color .2s linear}
-.quantity .plus :hover,.quantity .minus :hover{background-color:#DDD}
-.quantity .qty :focus,.quantity .plus :focus,.quantity .minus :focus{-webkit-box-shadow:none !important;box-shadow:none !important;outline:0 !important}
-.single-product .add-to-cart.button{height:40px;line-height:40px}
-.single-product .feature-box.fbox-plain.fbox-small{padding-left:26px}
-.single-product .feature-box.fbox-plain.fbox-small .fbox-icon{width:20px}
-.single-product .feature-box.fbox-plain.fbox-small .fbox-icon i{font-size:18px}
-.single-product .feature-box.fbox-plain.fbox-small h3,.single-product .feature-box.fbox-plain.fbox-small .ipost .entry-title h4,.ipost .entry-title .single-product .feature-box.fbox-plain.fbox-small h4{font-size:15px;font-weight:bold;line-height:18px;margin-bottom:7px}
-.single-product .feature-box.fbox-plain.fbox-small p{margin-left:-26px}
-.product-meta{font-size:13px;color:#777}
-.product-meta>.panel-body{margin-bottom:-5px}
-.product-meta>.panel-body>span,.page-numbers .product-meta>.panel-body>a{display:block;margin-bottom:5px}
-.product.iproduct{float:none;margin:0;width:100%}
-.product .product-image,.product .product-image a,.product .product-image img{height:auto}
-.cart .remove{font-size:14px;color:red}
-.cart .remove:hover{color:#000}
-.cart th{padding:12px 15px !important;font-size:14px;color:#555}
-.cart td{padding:12px 15px !important;vertical-align:middle !important;border-color:#e5e5e5 !important}
-.cart-product-thumbnail a{display:block;width:68px}
-.cart-product-thumbnail img{display:block;width:64px;height:64px;border:2px solid #EEE}
-.cart-product-thumbnail img:hover{border-color:#74bad4}
-.cart-product-name a,.product-name a{font-weight:bold;font-size:13px;color:#333}
-.cart-product-name a:hover,.product-name a:hover{color:#666}
-.cart-product-price,.cart-product-quantity,.cart-product-subtotal{text-align:center !important}
-.cart-product-quantity .quantity{display:inline-block;margin:0;float:none}
-td.actions{padding:20px 15px !important;vertical-align:top !important;background-color:#f5f5f5}
-.events .entry,.ievent{padding:20px;background-color:#f9f9f9;border-bottom:3px solid #EEE}
-.events .entry:after{display:none !important}
-.events .entry-image .entry-date,.ievent .entry-image .entry-date{position:absolute;top:10px;left:10px;background-color:rgba(0,0,0,0.7);color:#FFF;text-shadow:1px 1px 1px rgba(0,0,0,0.2);width:60px;height:64px;text-align:center;padding-top:9px;font-size:26px;line-height:1}
-.events .entry-image .entry-date span,.events .entry-image .entry-date .page-numbers a,.page-numbers .events .entry-image .entry-date a,.ievent .entry-image .entry-date span,.ievent .entry-image .entry-date .page-numbers a,.page-numbers .ievent .entry-image .entry-date a{display:block;font-size:12px;margin-top:7px}
-.events .entry-c,.ievent .entry-c{padding:5px 0}
-.single-event .entry-image img{border-radius:0}
-.single-event .events-meta{font-size:14px}
-.single-event .events-meta .iconlist li,.parallax .iconlist li{margin:5px 0}
-.single-event .entry-overlay,.parallax .entry-overlay-meta{position:absolute;top:auto;bottom:0;left:0;width:100%;height:80px;background-color:rgba(0,0,0,0.85);text-align:center;line-height:80px;font-size:22px;color:#FFF;text-shadow:1px 1px 1px rgba(0,0,0,0.3);z-index:5}
-.single-event .col_full .entry-overlay,.single-event .col_three_fourth .entry-overlay{position:relative}
-.single-event .countdown{display:inline-block;position:relative;top:7px}
-.single-event .countdown-section{padding:0 15px;border-left-color:rgba(255,255,255,0.3);color:#CCC}
-.single-event .countdown-amount{color:#FFF}
-.parallax .entry-overlay,.parallax .entry-overlay-meta{background:transparent;width:auto;text-align:right;bottom:30px;left:auto;right:30px}
-.parallax .entry-overlay-meta{padding:20px;font-size:14px;text-align:left;right:38px;bottom:130px;width:368px;height:auto;line-height:inherit;background-color:rgba(0,0,0,0.7);border-radius:3px}
-.parallax.overlay-left .entry-overlay,.parallax.overlay-left .entry-overlay-meta{right:auto;left:30px}
-.parallax.overlay-left .entry-overlay-meta{left:38px}
-.parallax.overlay-center .entry-overlay,.parallax.overlay-center .entry-overlay-meta{bottom:100px;right:auto;left:50%;margin-left:-192px}
-.parallax.overlay-center .entry-overlay-meta{top:100px;bottom:auto;margin-left:-184px}
-.parallax .entry-overlay-meta h2{font-size:20px;text-transform:uppercase;border-bottom:1px dashed rgba(255,255,255,0.2);padding-bottom:17px}
-.parallax .entry-overlay-meta h2 a{color:#FFF}
-.parallax .entry-overlay-meta h2 a:hover{color:#DDD}
-.parallax .countdown{top:0}
-.parallax .countdown-section{border-left:0;width:80px;height:80px;margin:0 8px;font-size:13px;background-color:rgba(0,0,0,0.7);border-radius:3px;padding-top:14px}
-.parallax .countdown-amount{font-size:28px;margin-bottom:6px}
-.ievent{position:relative;margin-top:20px}
-.ievent:first-child{margin-top:0}
-.ievent .entry-image{width:30%;margin-right:20px}
-.ievent .entry-content{margin-top:20px}
-.ievent .entry-title h2{font-size:18px}
-.ievent .entry-meta{margin-right:-10px}
-.ievent .entry-meta li{font-size:13px;margin-right:10px;padding-left:10px}
-.ievent .entry-meta li:first-child{padding-left:0}
 .countdown{display:block}
 .countdown-row{display:block;position:relative;text-align:center}
 .countdown-section{display:inline-block;font-size:11px;line-height:1;text-align:center;width:25%;border-left:1px dotted #BBB;color:#888;text-transform:capitalize}
@@ -2350,7 +2233,7 @@ body:not(.device-touch) .button.button-full strong{-webkit-transition:border .2s
 .button-3d.button-white:hover,.button-reveal.button-white:hover{background-color:#f9f9f9 !important}
 .button.button-nohover:hover{opacity:inherit !important;background-color:inherit !important;color:inherit !important;border-color:inherit !important}
 .promo{position:relative;padding:30px 200px 30px 0}
-.promo h3,.promo .ipost .entry-title h4,.ipost .entry-title .promo h4{font-weight:bold;margin-bottom:0}
+.promo h3{font-weight:bold;margin-bottom:0}
 .promo a.button{position:absolute;top:50%;margin:0;margin-top:-18px;left:auto;right:0}
 .promo>span,.page-numbers .promo>a,.promo>.container>span,.page-numbers .promo>.container>a{display:block;color:#444;font-weight:300;font-size:16px;margin-top:6px}
 .promo a.button.button-mini{margin-top:-12px}
@@ -2359,16 +2242,16 @@ body:not(.device-touch) .button.button-full strong{-webkit-transition:border .2s
 .promo a.button.button-xlarge{margin-top:-25px}
 .promo a.button.button-desc{margin-top:-40px}
 .promo-uppercase{text-transform:uppercase}
-.promo-uppercase h3,.promo-uppercase .ipost .entry-title h4,.ipost .entry-title .promo-uppercase h4{font-size:22px}
+.promo-uppercase h3{font-size:22px}
 .promo-uppercase>span,.page-numbers .promo-uppercase>a,.promo-uppercase>.container>span,.page-numbers .promo-uppercase>.container>a{font-size:15px}
 .promo.promo-border{border:1px solid #e5e5e5;border-radius:3px;padding-left:30px}
 .promo.promo-border a.button{right:30px}
 .promo.promo-light{background-color:#f5f5f5;border-radius:3px;padding-left:30px}
 .promo.promo-light a.button{right:30px}
 .promo.promo-dark{border:0 !important;background-color:#333;padding:30px 200px 30px 30px;text-shadow:1px 1px 1px rgba(0,0,0,0.2);border-radius:3px}
-.promo.promo-dark h3,.promo.promo-dark .ipost .entry-title h4,.ipost .entry-title .promo.promo-dark h4{color:#FFF}
+.promo.promo-dark h3{color:#FFF}
 .promo.promo-dark a.button{right:30px}
-.promo.promo-dark>h3 span,.ipost .entry-title .promo.promo-dark>h4 span,.promo.promo-dark>h3 .page-numbers a,.page-numbers .promo.promo-dark>h3 a,.ipost .entry-title .promo.promo-dark>h4 .page-numbers a,.page-numbers .ipost .entry-title .promo.promo-dark>h4 a,.promo.promo-dark>.container>h3 span,.ipost .entry-title .promo.promo-dark>.container>h4 span,.promo.promo-dark>.container>h3 .page-numbers a,.page-numbers .promo.promo-dark>.container>h3 a,.ipost .entry-title .promo.promo-dark>.container>h4 .page-numbers a,.page-numbers .ipost .entry-title .promo.promo-dark>.container>h4 a{padding:2px 8px;border-radius:3px;background-color:rgba(0,0,0,0.15);color:#FFF;font-weight:400}
+.promo.promo-dark>h3 span,.promo.promo-dark>h3 .page-numbers a,.page-numbers .promo.promo-dark>h3 a,.promo.promo-dark>.container>h3 span,.promo.promo-dark>.container>h3 .page-numbers a,.page-numbers .promo.promo-dark>.container>h3 a{padding:2px 8px;border-radius:3px;background-color:rgba(0,0,0,0.15);color:#FFF;font-weight:400}
 .promo.promo-dark>span,.page-numbers .promo.promo-dark>a,.promo.promo-dark>.container>span,.page-numbers .promo.promo-dark>.container>a{color:#CCC;margin-top:8px}
 .promo.promo-flat{background-color:#74bad4}
 .promo.promo-flat a.button:not(.button-border){background-color:rgba(0,0,0,0.2);color:#FFF}
@@ -2385,9 +2268,9 @@ body:not(.device-touch) .button.button-full strong{-webkit-transition:border .2s
 .promo.promo-center{text-align:center;padding:30px 20px}
 .promo.promo-center a.button{position:relative;top:0;margin:20px 0 0;left:0 !important;right:0}
 .promo.promo-mini{text-align:left;padding:20px 25px}
-.promo.promo-mini h3,.promo.promo-mini .ipost .entry-title h4,.ipost .entry-title .promo.promo-mini h4{font-size:20px;line-height:1.5}
-.promo.promo-mini.promo-uppercase h3,.promo.promo-mini.promo-uppercase .ipost .entry-title h4,.ipost .entry-title .promo.promo-mini.promo-uppercase h4{font-size:18px}
-.promo.promo-mini.promo-dark h3,.promo.promo-mini.promo-dark .ipost .entry-title h4,.ipost .entry-title .promo.promo-mini.promo-dark h4{line-height:1.7}
+.promo.promo-mini h3{font-size:20px;line-height:1.5}
+.promo.promo-mini.promo-uppercase h3{font-size:18px}
+.promo.promo-mini.promo-dark h3{line-height:1.7}
 .promo.promo-mini a.button{position:relative;top:0;margin:20px 0 0;left:0 !important;right:0}
 .promo.promo-mini.promo-center{text-align:center}
 .promo.promo-mini.promo-right{text-align:right}
@@ -2397,7 +2280,7 @@ body:not(.device-touch) .button.button-full strong{-webkit-transition:border .2s
 .feature-box .fbox-icon a,.feature-box .fbox-icon i,.feature-box .fbox-icon img{display:block;position:relative;width:100%;height:100%;color:#FFF}
 .feature-box .fbox-icon i,.feature-box .fbox-icon img{border-radius:50%;background-color:#74bad4}
 .feature-box .fbox-icon i{font-style:normal;font-size:28px;text-align:center;line-height:64px}
-.feature-box h3,.feature-box .ipost .entry-title h4,.ipost .entry-title .feature-box h4{font-size:16px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:0;color:#333}
+.feature-box h3{font-size:16px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:0;color:#333}
 .feature-box p{margin:8px 0 0 0;color:#999}
 .feature-box .before-heading{font-size:14px}
 .feature-box.fbox-large{padding:0 0 0 115px}
@@ -2438,7 +2321,7 @@ body:not(.device-touch) .button.button-full strong{-webkit-transition:border .2s
 .feature-box.fbox-plain.fbox-small .fbox-icon{width:28px}
 .feature-box.fbox-plain.fbox-small .fbox-icon i{font-size:28px}
 .feature-box.fbox-plain.fbox-small .fbox-icon img{height:28px}
-.feature-box.fbox-plain.fbox-small h3,.feature-box.fbox-plain.fbox-small .ipost .entry-title h4,.ipost .entry-title .feature-box.fbox-plain.fbox-small h4{font-size:15px;line-height:26px;margin-bottom:10px}
+.feature-box.fbox-plain.fbox-small h3{font-size:15px;line-height:26px;margin-bottom:10px}
 .feature-box.fbox-plain.fbox-small p{margin-left:-42px}
 .feature-box.fbox-plain.fbox-large .fbox-icon i{font-size:72px}
 .feature-box.fbox-plain.fbox-large .fbox-icon img{height:96px}
@@ -2476,11 +2359,11 @@ body:not(.device-touch) .button.button-full strong{-webkit-transition:border .2s
 .feature-box.fbox-right .fbox-icon{left:auto;right:0}
 .feature-box.fbox-right.fbox-plain.fbox-small{padding:0 42px 0 0}
 .feature-box.fbox-right.fbox-plain.fbox-small p{margin:0 -42px 0 0}
-.feature-box h3+.fbox-icon,.feature-box .ipost .entry-title h4+.fbox-icon,.ipost .entry-title .feature-box h4+.fbox-icon{margin-top:20px !important}
-.feature-box h3 span.subtitle,.feature-box .ipost .entry-title h4 span.subtitle,.ipost .entry-title .feature-box h4 span.subtitle,.feature-box h3 .page-numbers a.subtitle,.page-numbers .feature-box h3 a.subtitle,.feature-box .ipost .entry-title h4 .page-numbers a.subtitle,.page-numbers .feature-box .ipost .entry-title h4 a.subtitle,.ipost .entry-title .feature-box h4 .page-numbers a.subtitle,.page-numbers .ipost .entry-title .feature-box h4 a.subtitle{display:block;margin-top:5px;color:#444;font-weight:300;text-transform:none}
-.feature-box.fbox-center:not(.fbox-bg) h3:after,.feature-box.fbox-center:not(.fbox-bg) .ipost .entry-title h4:after,.ipost .entry-title .feature-box.fbox-center:not(.fbox-bg) h4:after{content:'';display:block;margin:20px auto;width:30px;border-top:2px solid #555;-webkit-transition:width .3s ease;transition:width .3s ease}
-.feature-box.fbox-center:not(.fbox-bg):hover h3:after,.feature-box.fbox-center:not(.fbox-bg):hover .ipost .entry-title h4:after,.ipost .entry-title .feature-box.fbox-center:not(.fbox-bg):hover h4:after{width:50px}
-.feature-box.fbox-center.noborder:not(.fbox-bg) h3:after,.feature-box.fbox-center.noborder:not(.fbox-bg) .ipost .entry-title h4:after,.ipost .entry-title .feature-box.fbox-center.noborder:not(.fbox-bg) h4:after,.feature-box.fbox-center.nobottomborder:not(.fbox-bg) h3:after,.feature-box.fbox-center.nobottomborder:not(.fbox-bg) .ipost .entry-title h4:after,.ipost .entry-title .feature-box.fbox-center.nobottomborder:not(.fbox-bg) h4:after{display:none}
+.feature-box h3+.fbox-icon{margin-top:20px !important}
+.feature-box h3 span.subtitle,.feature-box h3 .page-numbers a.subtitle,.page-numbers .feature-box h3 a.subtitle{display:block;margin-top:5px;color:#444;font-weight:300;text-transform:none}
+.feature-box.fbox-center:not(.fbox-bg) h3:after{content:'';display:block;margin:20px auto;width:30px;border-top:2px solid #555;-webkit-transition:width .3s ease;transition:width .3s ease}
+.feature-box.fbox-center:not(.fbox-bg):hover h3:after{width:50px}
+.feature-box.fbox-center.noborder:not(.fbox-bg) h3:after,.feature-box.fbox-center.nobottomborder:not(.fbox-bg) h3:after{display:none}
 .feature-box.fbox-center.fbox-italic p{font-style:italic;font-family:"Lato",sans-serif}
 .feature-box.fbox-bg.fbox-center{margin-top:68px;padding:68px 30px 30px;background-color:#FFF;border:1px solid #e5e5e5;border-radius:5px}
 .feature-box.fbox-bg.fbox-center:first-child{margin-top:48px}
@@ -2934,7 +2817,7 @@ body:not(.device-touch) .team-overlay{-webkit-transition:opacity .3s ease;transi
 .pricing [class^=col-]{padding:0;margin-top:20px}
 .pricing-box{position:relative;border:1px solid rgba(0,0,0,0.075);border-radius:3px;text-align:center;-webkit-box-shadow:0 1px 1px rgba(0,0,0,0.1);box-shadow:0 1px 1px rgba(0,0,0,0.1);background-color:#f5f5f5}
 .pricing-title{padding:15px 0;background-color:#f9f9f9;border-radius:3px 3px 0 0;text-shadow:1px 1px 1px #FFF;border-bottom:1px solid rgba(0,0,0,0.05)}
-.pricing-title h3,.pricing-title .ipost .entry-title h4,.ipost .entry-title .pricing-title h4{margin:0;font-size:20px;letter-spacing:1px;font-weight:bold;text-transform:uppercase;color:#555}
+.pricing-title h3{margin:0;font-size:20px;letter-spacing:1px;font-weight:bold;text-transform:uppercase;color:#555}
 .pricing-title span,.pricing-title .page-numbers a,.page-numbers .pricing-title a{display:block;color:#999;font-weight:300;font-size:14px;margin-top:3px;text-transform:uppercase}
 .pricing-price{position:relative;padding:25px 0;color:#333;font-weight:300;font-size:64px;line-height:1}
 .pricing-price:after{content:'';position:absolute;width:100px;border-top:1px solid rgba(0,0,0,0.1);top:auto;bottom:0;left:50%;margin-left:-50px}
@@ -2946,15 +2829,15 @@ body:not(.device-touch) .team-overlay{-webkit-transition:opacity .3s ease;transi
 .pricing-action{padding:15px 30px}
 .pricing-box.best-price{background-color:#FFF;-webkit-box-shadow:0 0 8px rgba(0,0,0,0.1);box-shadow:0 0 8px rgba(0,0,0,0.1);z-index:10;margin:-20px -1px 0 -1px}
 .pricing-box.best-price .pricing-title{background-color:#FFF;padding:20px 0}
-.pricing-box.best-price .pricing-title h3,.pricing-box.best-price .pricing-title .ipost .entry-title h4,.ipost .entry-title .pricing-box.best-price .pricing-title h4{font-size:22px}
+.pricing-box.best-price .pricing-title h3{font-size:22px}
 .pricing-box.best-price .pricing-price{color:#74bad4;font-size:72px}
 .pricing-box.pricing-minimal .pricing-price{background-color:#FFF;border-bottom:1px solid rgba(0,0,0,0.075)}
 .pricing-box.pricing-minimal .pricing-price:after{display:none}
 .pricing.pricing-5 .pricing-box{float:left;width:20%;margin-top:20px}
 .pricing.pricing-5 .pricing-box.best-price{margin-top:0}
 .pricing.pricing-5 .pricing-box:nth-child(5){margin-left:-1px}
-.pricing.pricing-5 .pricing-title h3,.pricing.pricing-5 .pricing-title .ipost .entry-title h4,.ipost .entry-title .pricing.pricing-5 .pricing-title h4{font-size:18px}
-.pricing.pricing-5 .best-price .pricing-title h3,.pricing.pricing-5 .best-price .pricing-title .ipost .entry-title h4,.ipost .entry-title .pricing.pricing-5 .best-price .pricing-title h4{font-size:20px}
+.pricing.pricing-5 .pricing-title h3{font-size:18px}
+.pricing.pricing-5 .best-price .pricing-title h3{font-size:20px}
 .pricing-box.pricing-extended{background-color:#FFF;text-align:left}
 .pricing-box.pricing-extended .pricing-desc{float:left;width:75%;padding:25px}
 .pricing-box.pricing-extended .pricing-title{background-color:transparent;padding-top:0;text-align:left}
@@ -3065,38 +2948,38 @@ body:not(.device-touch) .overlay .overlay-wrap,body:not(.device-touch) .text-ove
 .overlay .overlay-wrap i{position:absolute;opacity:.8;font-size:24px;line-height:1;width:24px;height:24px;text-align:center;top:50%;margin-top:-12px;left:50%;margin-left:-12px;color:#FFF}
 .overlay:hover .overlay-wrap,.overlay:hover .text-overlay{opacity:1}
 .text-overlay{position:absolute;opacity:.85;top:auto;bottom:0;height:auto;padding:40px 15px 15px;text-shadow:1px 1px 1px rgba(0,0,0,0.3);background:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,0)),to(rgba(0,0,0,0.85)));background:linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,0.85) 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000',endColorstr='#a6000000',GradientType=0);-webkit-backface-visibility:hidden;backface-visibility:hidden}
-.text-overlay-title h2,.text-overlay-title h3,.text-overlay-title .ipost .entry-title h4,.ipost .entry-title .text-overlay-title h4,.text-overlay-title h4{margin:0;color:#f5f5f5}
+.text-overlay-title h2,.text-overlay-title h3,.text-overlay-title h4{margin:0;color:#f5f5f5}
 .text-overlay-title h2{font-size:28px}
-.text-overlay-title h3,.text-overlay-title .ipost .entry-title h4,.ipost .entry-title .text-overlay-title h4{font-size:17px;font-weight:600}
-.text-overlay-title h2,.text-overlay-title h3,.text-overlay-title .ipost .entry-title h4,.ipost .entry-title .text-overlay-title h4,.text-overlay-title h4{max-width:100%;text-overflow:ellipsis;white-space:nowrap;overflow:hidden}
+.text-overlay-title h3{font-size:17px;font-weight:600}
+.text-overlay-title h2,.text-overlay-title h3,.text-overlay-title h4{max-width:100%;text-overflow:ellipsis;white-space:nowrap;overflow:hidden}
 .text-overlay-meta{max-width:100%;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;color:#CCC;font-size:13px}
 .text-overlay-meta span i,.text-overlay-meta .page-numbers a i,.page-numbers .text-overlay-meta a i{position:relative;top:1px;font-size:14px}
 .news-carousel .text-overlay{padding:40px 30px 25px}
 .news-carousel .text-overlay-title{margin:15px 0 10px}
-.news-carousel .text-overlay-title h2,.news-carousel .text-overlay-title h3,.news-carousel .text-overlay-title .ipost .entry-title h4,.ipost .entry-title .news-carousel .text-overlay-title h4,.news-carousel .text-overlay-title h4{line-height:1.2;text-overflow:none;white-space:normal}
+.news-carousel .text-overlay-title h2,.news-carousel .text-overlay-title h3,.news-carousel .text-overlay-title h4{line-height:1.2;text-overflow:none;white-space:normal}
 .news-carousel .text-overlay-meta{font-size:14px}
 .news-carousel .rounded-skill{position:absolute;margin:0 !important;top:30px;right:30px;color:#FFF;font-weight:700}
 .title-block{padding:2px 0 3px 20px;border-left:7px solid #74bad4;margin-bottom:30px}
 .title-block .title-block-right{padding:2px 20px 3px 0;border-left:0;border-right:7px solid #74bad4;text-align:right}
-.title-block h1,.title-block h2,.title-block h3,.title-block .ipost .entry-title h4,.ipost .entry-title .title-block h4,.title-block h4{margin-bottom:0}
+.title-block h1,.title-block h2,.title-block h3,.title-block h4{margin-bottom:0}
 .title-block>span,.page-numbers .title-block>a{display:block;margin-top:4px;color:#555;font-weight:300}
 .title-block h1+span,.title-block .page-numbers h1+a,.page-numbers .title-block h1+a{font-size:22px}
 .title-block h2+span,.title-block .page-numbers h2+a,.page-numbers .title-block h2+a{font-size:19px}
-.title-block h3+span,.title-block .ipost .entry-title h4+span,.ipost .entry-title .title-block h4+span,.title-block .page-numbers h3+a,.page-numbers .title-block h3+a,.title-block .ipost .entry-title .page-numbers h4+a,.page-numbers .title-block .ipost .entry-title h4+a,.ipost .entry-title .title-block .page-numbers h4+a,.page-numbers .ipost .entry-title .title-block h4+a{font-size:17px}
+.title-block h3+span,.title-block .page-numbers h3+a,.page-numbers .title-block h3+a{font-size:17px}
 .title-block h4+span,.title-block .page-numbers h4+a,.page-numbers .title-block h4+a{font-size:15px;margin-top:3px}
 .heading-block{margin-bottom:50px}
-.heading-block h1,.heading-block h2,.heading-block h3,.heading-block .ipost .entry-title h4,.ipost .entry-title .heading-block h4,.heading-block h4,.emphasis-title h1,.emphasis-title h2{margin-bottom:0;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#333}
+.heading-block h1,.heading-block h2,.heading-block h3,.heading-block h4,.emphasis-title h1,.emphasis-title h2{margin-bottom:0;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#333}
 .emphasis-title h1,.emphasis-title h2{font-weight:400;letter-spacing:0;text-transform:none}
 .heading-block h1{font-size:32px}
 .heading-block h2{font-size:30px}
-.heading-block h3,.heading-block .ipost .entry-title h4,.ipost .entry-title .heading-block h4{font-size:26px}
+.heading-block h3{font-size:26px}
 .heading-block h4{font-size:20px;font-weight:700}
 .heading-block>span:not(.before-heading),.page-numbers .heading-block>a:not(.before-heading){display:block;margin-top:10px;font-weight:300;color:#777}
 .heading-block .before-heading{margin-bottom:7px}
 .heading-block.center>span,.page-numbers .heading-block.center>a,.heading-block.title-center>span,.page-numbers .heading-block.title-center>a,.center .heading-block>span,.center .page-numbers .heading-block>a,.page-numbers .center .heading-block>a{max-width:700px;margin-left:auto;margin-right:auto}
 .heading-block h1+span,.heading-block .page-numbers h1+a,.page-numbers .heading-block h1+a{font-size:24px}
 .heading-block h2+span,.heading-block .page-numbers h2+a,.page-numbers .heading-block h2+a{font-size:22px}
-.heading-block h3+span,.heading-block .ipost .entry-title h4+span,.ipost .entry-title .heading-block h4+span,.heading-block .page-numbers h3+a,.page-numbers .heading-block h3+a,.heading-block .ipost .entry-title .page-numbers h4+a,.page-numbers .heading-block .ipost .entry-title h4+a,.ipost .entry-title .heading-block .page-numbers h4+a,.page-numbers .ipost .entry-title .heading-block h4+a,.heading-block h4+span,.heading-block .page-numbers h4+a,.page-numbers .heading-block h4+a{font-size:20px}
+.heading-block h3+span,.heading-block .page-numbers h3+a,.page-numbers .heading-block h3+a,.heading-block h4+span,.heading-block .page-numbers h4+a,.page-numbers .heading-block h4+a{font-size:20px}
 .heading-block ~ p:not(.lead){font-size:15px}
 .heading-block:after{content:'';display:block;margin-top:30px;width:40px;border-top:2px solid #444}
 .center .heading-block:after,.heading-block.center:after,.heading-block.title-center:after{margin:30px auto 0}
@@ -3107,18 +2990,18 @@ body:not(.device-touch) .overlay .overlay-wrap,body:not(.device-touch) .text-ove
 .emphasis-title h1,.emphasis-title h2{font-size:64px;letter-spacing:-2px}
 .emphasis-title h1 strong,.emphasis-title h2 strong{font-weight:700}
 .fancy-title{position:relative;margin-bottom:30px}
-.fancy-title h1,.fancy-title h2,.fancy-title h3,.fancy-title .ipost .entry-title h4,.ipost .entry-title .fancy-title h4,.fancy-title h4,.fancy-title h5,.fancy-title h6{position:relative;display:inline-block;background-color:#FFF;padding-right:15px;margin-bottom:0}
+.fancy-title h1,.fancy-title h2,.fancy-title h3,.fancy-title h4,.fancy-title h5,.fancy-title h6{position:relative;display:inline-block;background-color:#FFF;padding-right:15px;margin-bottom:0}
 .fancy-title h4,.fancy-title h5,.fancy-title h6{padding-right:10px}
 .fancy-title.title-double-border:before,.fancy-title.title-border:before,.fancy-title.title-border-color:before{content:'';position:absolute;width:100%;height:0;border-top:3px double #e5e5e5;left:auto;top:46%;right:0}
 .fancy-title.title-border:before{top:49%;border-top:1px solid #EEE}
 .fancy-title.title-border-color:before{top:49%;border-top:1px solid #74bad4;opacity:.6}
 .title-center{text-align:center}
-.title-center h1,.title-center h2,.title-center h3,.title-center .ipost .entry-title h4,.ipost .entry-title .title-center h4{padding:0 15px}
+.title-center h1,.title-center h2,.title-center h3{padding:0 15px}
 .title-center h4,.title-center h5,.title-center h6{padding:0 10px}
 .title-right{text-align:right}
-.title-right h1,.title-right h2,.title-right h3,.title-right .ipost .entry-title h4,.ipost .entry-title .title-right h4{padding:0 0 0 15px}
+.title-right h1,.title-right h2,.title-right h3{padding:0 0 0 15px}
 .title-right h4,.title-right h5,.title-right h6{padding:0 0 0 10px}
-.fancy-title.title-bottom-border h1,.fancy-title.title-bottom-border h2,.fancy-title.title-bottom-border h3,.fancy-title.title-bottom-border .ipost .entry-title h4,.ipost .entry-title .fancy-title.title-bottom-border h4,.fancy-title.title-bottom-border h4,.fancy-title.title-bottom-border h5,.fancy-title.title-bottom-border h6{display:block;background:transparent;padding:0 0 10px;border-bottom:2px solid #74bad4}
+.fancy-title.title-bottom-border h1,.fancy-title.title-bottom-border h2,.fancy-title.title-bottom-border h3,.fancy-title.title-bottom-border h4,.fancy-title.title-bottom-border h5,.fancy-title.title-bottom-border h6{display:block;background:transparent;padding:0 0 10px;border-bottom:2px solid #74bad4}
 .fancy-title.title-dotted-border{background:url("images/icons/dotted.png") repeat-x center}
 .before-heading{display:block;margin:0 0 5px;font-size:16px;font-family:"Crete Round",serif;font-style:italic;font-weight:400;color:#999}
 .divider{position:relative;overflow:hidden;margin:35px 0;color:#e5e5e5;width:100%}
@@ -3179,7 +3062,7 @@ label.error{display:none !important}
 .form-control.error,.sm-form-control.error{border-color:#e42c3e}
 #google-map{position:relative;width:100%;height:450px}
 .gmap img{max-width:none !important}
-.gm-style .gm-style-iw h3 span,.gm-style .gm-style-iw .ipost .entry-title h4 span,.ipost .entry-title .gm-style .gm-style-iw h4 span,.gm-style .gm-style-iw h3 .page-numbers a,.page-numbers .gm-style .gm-style-iw h3 a,.gm-style .gm-style-iw .ipost .entry-title h4 .page-numbers a,.page-numbers .gm-style .gm-style-iw .ipost .entry-title h4 a,.ipost .entry-title .gm-style .gm-style-iw h4 .page-numbers a,.page-numbers .ipost .entry-title .gm-style .gm-style-iw h4 a{font-size:inherit;font-family:inherit}
+.gm-style .gm-style-iw h3 span,.gm-style .gm-style-iw h3 .page-numbers a,.page-numbers .gm-style .gm-style-iw h3 a{font-size:inherit;font-family:inherit}
 #map-overlay{position:relative;padding:100px 0}
 #map-overlay #google-map{position:absolute;height:100%;top:0;left:0}
 #content .cse .gsc-control-cse,#content .gsc-control-cse,#content .gsc-above-wrapper-area,#content .gsc-adBlock,#content .gsc-thumbnail-inside,#content .gsc-url-top,#content .gsc-table-result,#content .gsc-webResult,#content .gsc-result{padding:0 !important}
@@ -3216,7 +3099,7 @@ body:not(.device-touch) #gotoTop{-webkit-transition:background-color .2s linear;
 .landing-wide-form{background:rgba(0,0,0,0.3);padding:30px;border-radius:3px}
 .landing-form-overlay{position:absolute;z-index:10;top:auto;left:auto;right:0;bottom:-154px;background-color:rgba(0,0,0,0.6);border-radius:3px 3px 0 0}
 .landing-video{z-index:1;width:560px;height:315px;margin:22px 0 0 95px;overflow:hidden}
-.landing-promo h3,.landing-promo .ipost .entry-title h4,.ipost .entry-title .landing-promo h4{font-size:26px}
+.landing-promo h3{font-size:26px}
 .landing-promo>.container>span,.page-numbers .landing-promo>.container>a{font-size:17px}
 .preloader,.preloader2,.form-process{display:block;width:100%;height:100%;background:url("images/preloader.gif") center center no-repeat #FFF}
 .preloader2{background-color:transparent}
@@ -3553,7 +3436,7 @@ button.swiper-pagination-bullet{border:0;margin:0;padding:0;-webkit-box-shadow:n
 .swiper-container-flip .swiper-slide-active,.swiper-container-flip .swiper-slide-active .swiper-slide-active{pointer-events:auto}
 .swiper-container-flip .swiper-slide-shadow-bottom,.swiper-container-flip .swiper-slide-shadow-left,.swiper-container-flip .swiper-slide-shadow-right,.swiper-container-flip .swiper-slide-shadow-top{z-index:0;-webkit-backface-visibility:hidden;backface-visibility:hidden}
 .swiper-container-coverflow .swiper-wrapper{-ms-perspective:1200px}
-.dark,.dark h1,.dark h2,.dark h3,.dark .ipost .entry-title h4,.ipost .entry-title .dark h4,.dark h4,.dark h5,.dark h6{color:#EEE}
+.dark,.dark h1,.dark h2,.dark h3,.dark h4,.dark h5,.dark h6{color:#EEE}
 .dark a:hover{color:#EEE}
 body.dark,.dark #wrapper,.dark #content,.dark .shop-quick-view-ajax,.dark .portfolio-ajax-modal,.dark .modal-content,.dark .css3-spinner,body.dark #side-panel,body #side-panel.dark{background-color:#383838}
 .dark .css3-spinner>div,.dark .css3-spinner-grid-pulse>div,.dark .css3-spinner-ball-rotate>div,.dark .css3-spinner-zig-zag>div,.dark .css3-spinner-ball-scale-multiple>div,.dark .css3-spinner-triangle-path>div,.dark .css3-spinner-ball-pulse-sync>div{background-color:rgba(255,255,255,0.35)}
@@ -3626,8 +3509,8 @@ body.dark,.dark #wrapper,.dark #content,.dark .shop-quick-view-ajax,.dark .portf
 .dark.side-header #primary-menu ul ul a{color:#AAA !important}
 .dark .slider-caption,.dark .slider-caption h2{color:#EEE;text-shadow:1px 1px 1px rgba(0,0,0,0.15)}
 .not-dark .slider-caption,.not-dark .slider-caption h2{color:#222;text-shadow:none}
-.dark .ei-title h2,.dark .ei-title h3,.dark .ei-title .ipost .entry-title h4,.ipost .entry-title .dark .ei-title h4,.dark .ei-title h2 span,.dark .ei-title h2 .page-numbers a,.page-numbers .dark .ei-title h2 a,.dark .ei-title h3 span,.dark .ei-title .ipost .entry-title h4 span,.ipost .entry-title .dark .ei-title h4 span,.dark .ei-title h3 .page-numbers a,.page-numbers .dark .ei-title h3 a,.dark .ei-title .ipost .entry-title h4 .page-numbers a,.page-numbers .dark .ei-title .ipost .entry-title h4 a,.ipost .entry-title .dark .ei-title h4 .page-numbers a,.page-numbers .ipost .entry-title .dark .ei-title h4 a{color:#EEE !important;text-shadow:1px 1px 1px rgba(0,0,0,0.15)}
-.not-dark .ei-title h2,.not-dark .ei-title h3,.not-dark .ei-title .ipost .entry-title h4,.ipost .entry-title .not-dark .ei-title h4,.not-dark .ei-title h2 span,.not-dark .ei-title h2 .page-numbers a,.page-numbers .not-dark .ei-title h2 a,.not-dark .ei-title h3 span,.not-dark .ei-title .ipost .entry-title h4 span,.ipost .entry-title .not-dark .ei-title h4 span,.not-dark .ei-title h3 .page-numbers a,.page-numbers .not-dark .ei-title h3 a,.not-dark .ei-title .ipost .entry-title h4 .page-numbers a,.page-numbers .not-dark .ei-title .ipost .entry-title h4 a,.ipost .entry-title .not-dark .ei-title h4 .page-numbers a,.page-numbers .ipost .entry-title .not-dark .ei-title h4 a{color:#222 !important;text-shadow:none}
+.dark .ei-title h2,.dark .ei-title h3,.dark .ei-title h2 span,.dark .ei-title h2 .page-numbers a,.page-numbers .dark .ei-title h2 a,.dark .ei-title h3 span,.dark .ei-title h3 .page-numbers a,.page-numbers .dark .ei-title h3 a{color:#EEE !important;text-shadow:1px 1px 1px rgba(0,0,0,0.15)}
+.not-dark .ei-title h2,.not-dark .ei-title h3,.not-dark .ei-title h2 span,.not-dark .ei-title h2 .page-numbers a,.page-numbers .not-dark .ei-title h2 a,.not-dark .ei-title h3 span,.not-dark .ei-title h3 .page-numbers a,.page-numbers .not-dark .ei-title h3 a{color:#222 !important;text-shadow:none}
 .dark #page-title{background-color:#282828;border-bottom-color:#3f3f3f}
 .dark #page-title h1{color:rgba(255,255,255,0.9) !important}
 .dark #page-title span,.dark #page-title .page-numbers a,.page-numbers .dark #page-title a{color:rgba(255,255,255,0.7)}
@@ -3639,8 +3522,8 @@ body.dark,.dark #wrapper,.dark #content,.dark .shop-quick-view-ajax,.dark .portf
 .dark #portfolio-filter li a:hover{color:#EEE}
 .dark #portfolio-shuffle{color:#999;border-color:rgba(255,255,255,0.08)}
 .dark #portfolio-filter li.activeFilter a,.dark #portfolio-shuffle:hover{color:#FFF}
-.dark .portfolio-desc h3 a,.dark .portfolio-desc .ipost .entry-title h4 a,.ipost .entry-title .dark .portfolio-desc h4 a{color:#EEE}
-.dark .portfolio-desc h3 a:hover,.dark .portfolio-desc .ipost .entry-title h4 a:hover,.ipost .entry-title .dark .portfolio-desc h4 a:hover{color:#BBB}
+.dark .portfolio-desc h3 a{color:#EEE}
+.dark .portfolio-desc h3 a:hover{color:#BBB}
 .dark .portfolio-desc span,.dark .portfolio-desc .page-numbers a,.page-numbers .dark .portfolio-desc a{color:#888}
 .dark .portfolio-desc span a,.dark .portfolio-desc .page-numbers a a,.page-numbers .dark .portfolio-desc a a{color:#888}
 .dark .portfolio-desc span a:hover,.dark .portfolio-desc .page-numbers a a:hover,.page-numbers .dark .portfolio-desc a a:hover{color:#CCC}
@@ -3656,8 +3539,8 @@ body.dark,.dark #wrapper,.dark #content,.dark .shop-quick-view-ajax,.dark .portf
 .dark #portfolio-navigation a{color:#BBB}
 .dark #portfolio-navigation a:hover{color:#EEE}
 .dark .entry{border-bottom-color:rgba(255,255,255,0.08)}
-.dark .entry-title h2 a,.dark .ipost .entry-title h3 a,.dark .ipost .entry-title h4 a,.dark .ipost .entry-title h4 a{color:#EEE}
-.dark .entry-title h2 a:hover,.dark .ipost .entry-title h3 a:hover,.dark .ipost .entry-title h4 a:hover,.dark .ipost .entry-title h4 a:hover{color:#BBB}
+.dark .entry-title h2 a,.dark .ipost .entry-title h3 a,.dark .ipost .entry-title h4 a{color:#EEE}
+.dark .entry-title h2 a:hover,.dark .ipost .entry-title h3 a:hover,.dark .ipost .entry-title h4 a:hover{color:#BBB}
 .dark .entry-meta li{border-left-color:rgba(255,255,255,0.08);color:#888}
 .dark .entry-meta li a{color:#888}
 .dark .entry-meta li a:hover{color:#CCC}
@@ -3685,8 +3568,8 @@ body.dark,.dark #wrapper,.dark #content,.dark .shop-quick-view-ajax,.dark .portf
 .dark .review-comment-ratings{color:#CCC}
 .dark .comment-reply-link:hover{color:#888}
 .dark p.wp-caption-text{background-color:rgba(0,0,0,0.2)}
-.dark .product-title h3 a,.dark .product-title .ipost .entry-title h4 a,.ipost .entry-title .dark .product-title h4 a,.dark .single-product .product-title h2 a{color:#EEE}
-.dark .product-title h3 a:hover,.dark .product-title .ipost .entry-title h4 a:hover,.ipost .entry-title .dark .product-title h4 a:hover,.dark .single-product .product-title h2 a:hover{color:#BBB}
+.dark .product-title h3 a,.dark .single-product .product-title h2 a{color:#EEE}
+.dark .product-title h3 a:hover,.dark .single-product .product-title h2 a:hover{color:#BBB}
 .dark .product-price{color:#BBB}
 .dark .product-overlay a{color:#EEE;background-color:rgba(0,0,0,0.8);border-right-color:rgba(255,255,255,0.15)}
 .dark .product-overlay a:last-child{border-right:0}
@@ -3719,7 +3602,7 @@ body.dark,.dark #wrapper,.dark #content,.dark .shop-quick-view-ajax,.dark .portf
 .dark .promo.promo-border{border-color:rgba(255,255,255,0.08)}
 .dark .promo.promo-light{background-color:rgba(255,255,255,0.1)}
 .dark .promo.promo-dark:not(.promo-flat){background-color:rgba(0,0,0,0.3)}
-.dark .feature-box h3,.dark .feature-box .ipost .entry-title h4,.ipost .entry-title .dark .feature-box h4{color:#CCC}
+.dark .feature-box h3{color:#CCC}
 .dark .feature-box p{color:#888}
 .dark .feature-box.fbox-light.fbox-outline .fbox-icon{border-color:rgba(255,255,255,0.15)}
 .dark .feature-box.fbox-light .fbox-icon i,.dark .feature-box.fbox-light .fbox-icon img{border-color:rgba(255,255,255,0.1);background-color:rgba(255,255,255,0.1);color:#FFF}
@@ -3727,7 +3610,7 @@ body.dark,.dark #wrapper,.dark #content,.dark .shop-quick-view-ajax,.dark .portf
 .dark .feature-box.fbox-dark .fbox-icon i,.dark .feature-box.fbox-dark .fbox-icon img{background-color:rgba(255,255,255,0.1)}
 .dark .feature-box.fbox-border.fbox-light .fbox-icon,.dark .feature-box.fbox-border.fbox-dark .fbox-icon{border-color:rgba(255,255,255,0.15)}
 .dark .feature-box.fbox-border.fbox-light .fbox-icon i,.dark .feature-box.fbox-border.fbox-light .fbox-icon img,.dark .feature-box.fbox-border.fbox-dark .fbox-icon i,.dark .feature-box.fbox-border.fbox-dark .fbox-icon img,.dark .feature-box.fbox-plain.fbox-light .fbox-icon i,.dark .feature-box.fbox-plain.fbox-light .fbox-icon img,.dark .feature-box.fbox-plain.fbox-dark .fbox-icon i,.dark .feature-box.fbox-plain.fbox-dark .fbox-icon img{color:#FFF}
-.dark .feature-box h3 span.subtitle,.dark .feature-box .ipost .entry-title h4 span.subtitle,.ipost .entry-title .dark .feature-box h4 span.subtitle,.dark .feature-box h3 .page-numbers a.subtitle,.page-numbers .dark .feature-box h3 a.subtitle,.dark .feature-box .ipost .entry-title h4 .page-numbers a.subtitle,.page-numbers .dark .feature-box .ipost .entry-title h4 a.subtitle,.ipost .entry-title .dark .feature-box h4 .page-numbers a.subtitle,.page-numbers .ipost .entry-title .dark .feature-box h4 a.subtitle{color:#AAA}
+.dark .feature-box h3 span.subtitle,.dark .feature-box h3 .page-numbers a.subtitle,.page-numbers .dark .feature-box h3 a.subtitle{color:#AAA}
 .dark .feature-box.fbox-bg.fbox-center,.dark .feature-box.media-box.fbox-bg .fbox-desc{background-color:#383838;border-color:rgba(255,255,255,0.1)}
 .dark .feature-box.fbox-bg.fbox-center.fbox-plain .fbox-icon,.dark .feature-box.fbox-bg.fbox-center.fbox-border .fbox-icon,.dark .feature-box.fbox-bg.fbox-center.fbox-outline .fbox-icon{background-color:#383838 !important}
 .dark .feature-box.fbox-bg.fbox-center.fbox-light .fbox-icon i{background-color:#444 !important}
@@ -3740,7 +3623,7 @@ body.dark,.dark #wrapper,.dark #content,.dark .shop-quick-view-ajax,.dark .portf
 .dark .fbox-border.fbox-effect.fbox-dark .fbox-icon i:hover,.dark .fbox-border.fbox-effect.fbox-dark:hover .fbox-icon i{-webkit-box-shadow:0 0 0 1px #74bad4;box-shadow:0 0 0 1px #74bad4}
 .dark .fbox-border.fbox-effect.fbox-dark .fbox-icon i:after{background-color:#74bad4}
 .dark .process-steps li .i-bordered{background-color:#494949}
-.dark .process-steps li:before,.dark .process-steps li:after,.dark .feature-box.fbox-center:not(.fbox-bg) h3:after,.dark .feature-box.fbox-center:not(.fbox-bg) .ipost .entry-title h4:after,.ipost .entry-title .dark .feature-box.fbox-center:not(.fbox-bg) h4:after{border-top-color:rgba(255,255,255,0.15)}
+.dark .process-steps li:before,.dark .process-steps li:after,.dark .feature-box.fbox-center:not(.fbox-bg) h3:after{border-top-color:rgba(255,255,255,0.15)}
 .dark .heading-block:not(.not-dark):after{border-top-color:rgba(255,255,255,0.4)}
 .dark .style-msg2{border-left:4px solid rgba(0,0,0,0.3)}
 .dark .style-msg .sb-msg,.dark .style-msg2 .msgtitle,.dark .style-msg2 .sb-msg{border-left-color:rgba(255,255,255,0.1)}
@@ -3797,7 +3680,7 @@ body.dark,.dark #wrapper,.dark #content,.dark .shop-quick-view-ajax,.dark .portf
 .dark .team-content{color:#999}
 .dark .pricing-box{border-color:rgba(255,255,255,0.1);background-color:rgba(0,0,0,0.2);-webkit-box-shadow:0 1px 1px rgba(0,0,0,0.1);box-shadow:0 1px 1px rgba(0,0,0,0.1)}
 .dark .pricing-title{background-color:rgba(255,255,255,0.03);text-shadow:1px 1px 1px rgba(0,0,0,0.15);border-bottom-color:rgba(255,255,255,0.1)}
-.dark .pricing-title h3,.dark .pricing-title .ipost .entry-title h4,.ipost .entry-title .dark .pricing-title h4{color:#DDD}
+.dark .pricing-title h3{color:#DDD}
 .dark .pricing-price{color:#EEE}
 .dark .pricing-price:after{border-top-color:rgba(255,255,255,0.1)}
 .dark .pricing-features{border-bottom-color:rgba(255,255,255,0.1)}
@@ -3820,11 +3703,11 @@ body.dark,.dark #wrapper,.dark #content,.dark .shop-quick-view-ajax,.dark .portf
 .dark #contact-form-overlay,.dark #contact-form-overlay-mini{background-color:#383838}
 .dark .title-block>span,.dark .page-numbers .title-block>a,.page-numbers .dark .title-block>a{color:#999}
 .dark .heading-block:not(.not-dark),.dark .counter{text-shadow:1px 1px 1px rgba(0,0,0,0.1)}
-.dark .heading-block:not(.not-dark) h1,.dark .heading-block:not(.not-dark) h2,.dark .heading-block:not(.not-dark) h3,.dark .heading-block:not(.not-dark) .ipost .entry-title h4,.ipost .entry-title .dark .heading-block:not(.not-dark) h4,.dark .heading-block:not(.not-dark) h4,.dark .emphasis-title:not(.not-dark) h1,.dark .emphasis-title:not(.not-dark) h2{color:#FFF}
-.dark .heading-block.not-dark h1,.dark .heading-block.not-dark h2,.dark .heading-block.not-dark h3,.dark .heading-block.not-dark .ipost .entry-title h4,.ipost .entry-title .dark .heading-block.not-dark h4,.dark .heading-block.not-dark h4,.dark .emphasis-title.not-dark h1,.dark .emphasis-title.not-dark h2{color:#333}
+.dark .heading-block:not(.not-dark) h1,.dark .heading-block:not(.not-dark) h2,.dark .heading-block:not(.not-dark) h3,.dark .heading-block:not(.not-dark) h4,.dark .emphasis-title:not(.not-dark) h1,.dark .emphasis-title:not(.not-dark) h2{color:#FFF}
+.dark .heading-block.not-dark h1,.dark .heading-block.not-dark h2,.dark .heading-block.not-dark h3,.dark .heading-block.not-dark h4,.dark .emphasis-title.not-dark h1,.dark .emphasis-title.not-dark h2{color:#333}
 .dark .heading-block:not(.not-dark)>span,.dark .page-numbers .heading-block:not(.not-dark)>a,.page-numbers .dark .heading-block:not(.not-dark)>a{color:#EEE}
 .dark .emphasis-title.not-dark{color:#444}
-.dark .fancy-title h1,.dark .fancy-title h2,.dark .fancy-title h3,.dark .fancy-title .ipost .entry-title h4,.ipost .entry-title .dark .fancy-title h4,.dark .fancy-title h4,.dark .fancy-title h5,.dark .fancy-title h6{background-color:#383838}
+.dark .fancy-title h1,.dark .fancy-title h2,.dark .fancy-title h3,.dark .fancy-title h4,.dark .fancy-title h5,.dark .fancy-title h6{background-color:#383838}
 .dark .fancy-title.title-double-border:before,.dark .fancy-title.title-border:before,.dark .fancy-title.title-border-color:before,.dark .fancy-title.title-border:before{border-top-color:rgba(255,255,255,0.15)}
 .dark .divider{color:rgba(255,255,255,0.15)}
 .dark .divider:after,.dark .divider.divider-center:before,.dark .divider.divider-center.divider-short:before{border-top-color:rgba(255,255,255,0.1)}
@@ -6480,7 +6363,14 @@ ul{margin-left:30px}
 #top-bar .top-right-links ul li.no-hover:hover{background-color:transparent}
 .fluid-width-video-wrapper{margin-top:20px;margin-bottom:20px;padding:28% !important}
 .entry-image .fluid-width-video-wrapper{margin-top:0;margin-bottom:0}
-.ipost .entry-title h3,.ipost .entry-title h4{font-size:1.125rem}
+h3.card-title{font-size:1.125rem}
+.card{margin-bottom:40px !important}
+.card p{margin-bottom:20px}
+.card-list{list-style:none;font-family:"Crete Round",serif;font-size:13px;margin-left:0;margin-bottom:10px}
+.card-list li{display:inline;margin-right:5px}
+.card-list li:before{content:'/';display:inline-block;margin-right:10px;opacity:.5}
+.card-list li:first-child:before{content:'';margin:0}
+.card-footer{background-color:transparent;border-top:0;margin-bottom:20px}
 #content .content-wrap{padding-top:40px}
 .copyright-links li{display:inline}
 ul.page-numbers{list-style:none;margin:0}
@@ -6756,7 +6646,7 @@ ul.page-numbers li{display:block;float:left;margin:0 4px 4px 0;text-align:center
 .portfolio:not(.portfolio-1) .portfolio-item{padding:0 6px 6px 0}
 .portfolio:not(.portfolio-1) .portfolio-item{width:50%}
 .portfolio:not(.portfolio-1) .portfolio-desc{padding:15px 5px 10px}
-.portfolio:not(.portfolio-1) .portfolio-desc h3,.portfolio:not(.portfolio-1) .portfolio-desc .ipost .entry-title h4,.ipost .entry-title .portfolio:not(.portfolio-1) .portfolio-desc h4{font-size:16px}
+.portfolio:not(.portfolio-1) .portfolio-desc h3{font-size:16px}
 .portfolio:not(.portfolio-1) .portfolio-desc span,.portfolio:not(.portfolio-1) .portfolio-desc .page-numbers a,.page-numbers .portfolio:not(.portfolio-1) .portfolio-desc a{font-size:14px}
 .portfolio-notitle:not(.portfolio-1) .portfolio-desc{height:78px;padding:15px 5px;bottom:-79px}
 .portfolio-full.portfolio-notitle:not(.portfolio-1) .portfolio-desc,.portfolio-nomargin.portfolio-notitle:not(.portfolio-1) .portfolio-desc{bottom:-78px;border-bottom:0}
@@ -6767,7 +6657,7 @@ ul.page-numbers li{display:block;float:left;margin:0 4px 4px 0;text-align:center
 .post-grid:not(.post-masonry) .entry-image iframe{height:246px}
 .shop:not(.product-1){margin:0 -12px -12px 0}
 .shop:not(.product-1) .product{padding:0 12px 12px 0;width:50%}
-.shop:not(.product-1) .product-title h3,.shop:not(.product-1) .product-title .ipost .entry-title h4,.ipost .entry-title .shop:not(.product-1) .product-title h4{font-size:17px}
+.shop:not(.product-1) .product-title h3{font-size:17px}
 .clients-grid:not(.grid-3):not(.grid-2) li,.clients-grid.grid-4 li,.clients-grid.grid-6 li{width:33.33%}
 .button.button-full{font-size:18px}
 .button.button-full i{top:2px !important;margin-left:3px !important}
@@ -6971,7 +6861,7 @@ ul.page-numbers li{display:block;float:left;margin:0 4px 4px 0;text-align:center
 .dark .nav-tabs-justified>li>a{border-bottom-color:rgba(255,255,255,0.15)}
 .dark .nav-tabs-justified>.active>a,.dark .nav-tabs-justified>.active>a:hover,.dark .nav-tabs-justified>.active>a:focus{border-bottom-color:#383838}
 .text-overlay{padding:50px 15px 25px}
-.text-overlay-title h3,.text-overlay-title .ipost .entry-title h4,.ipost .entry-title .text-overlay-title h4{font-size:24px}
+.text-overlay-title h3{font-size:24px}
 .text-overlay-meta{font-size:14px}
 }@media only screen and (min-width:768px) and (max-width:991.98px){.swiper_wrapper:not(.full-screen):not(.canvas-slider-grid),.swiper_wrapper:not(.full-screen):not(.canvas-slider-grid) .swiper-slide{height:400px !important}
 .sidebar-widgets-wrap{position:relative;margin:0 -20px -40px -20px}
@@ -7265,7 +7155,7 @@ body:not(.device-touch) #page-menu.dots-menu nav li div{-webkit-transition:all .
 .col_one_third .landing-wide-form .heading-block span,.col_one_third .landing-wide-form .heading-block .page-numbers a,.page-numbers .col_one_third .landing-wide-form .heading-block a{font-size:17px}
 .col_one_third .landing-wide-form{padding:36px 30px}
 .bothsidebar .product-1 .product-image{width:200px;height:267px}
-.product-title h3,.product-title .ipost .entry-title h4,.ipost .entry-title .product-title h4{font-size:18px}
+.product-title h3{font-size:18px}
 .landing-video{width:465px;height:262px;margin:19px 0 0 75px}
 .panel .portfolio-meta li{padding-left:22px}
 .panel .portfolio-meta li span,.panel .portfolio-meta li .page-numbers a,.page-numbers .panel .portfolio-meta li a{display:block;margin-left:-21px}
@@ -7471,9 +7361,9 @@ body:not(.device-touch) #page-menu.dots-menu nav li div{-webkit-transition:all .
 .table-responsive-xl>.table-bordered{border:0}
 .navbar-expand-xl>.container,.navbar-expand-xl>.container-fluid{padding-right:0;padding-left:0}
 }@media only screen and (max-width:1199.98px){canvas{max-width:100%;height:auto !important}
-.promo h3,.promo .ipost .entry-title h4,.ipost .entry-title .promo h4{font-size:20px}
+.promo h3{font-size:20px}
 .promo>span,.page-numbers .promo>a,.promo>.container>span,.page-numbers .promo>.container>a{font-size:15px}
-.promo-uppercase h3,.promo-uppercase .ipost .entry-title h4,.ipost .entry-title .promo-uppercase h4{font-size:19px}
+.promo-uppercase h3{font-size:19px}
 .promo-uppercase>span,.page-numbers .promo-uppercase>a,.promo-uppercase>.container>span,.page-numbers .promo-uppercase>.container>a{font-size:14px}
 }@media(max-width:991.98px){.table-responsive-lg{display:block;width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
 .table-responsive-lg>.table-bordered{border:0}
@@ -7628,10 +7518,10 @@ body:not(.sticky-responsive-menu) #primary-menu.mobile-menu-off-canvas>ul.d-bloc
 .post-timeline .entry{width:290px !important}
 .post-timeline .entry.entry-date-section{width:100% !important}
 .product{width:33.33333333%}
-.product:not(.product-2):not(.product-3) .product-title h3,.product:not(.product-2):not(.product-3) .product-title .ipost .entry-title h4,.ipost .entry-title .product:not(.product-2):not(.product-3) .product-title h4{font-size:18px}
+.product:not(.product-2):not(.product-3) .product-title h3{font-size:18px}
 .pricing [class^=col-md-] .pricing-box.best-price{margin-top:0}
 .pricing.pricing-5 .pricing-box.best-price{margin-top:20px}
-.device-md .pricing.pricing-5 .pricing-title h3,.device-md .pricing.pricing-5 .pricing-title .ipost .entry-title h4,.ipost .entry-title .device-md .pricing.pricing-5 .pricing-title h4,.device-md .pricing.pricing-5 .best-price .pricing-title h3,.device-md .pricing.pricing-5 .best-price .pricing-title .ipost .entry-title h4,.ipost .entry-title .device-md .pricing.pricing-5 .best-price .pricing-title h4{font-size:14px}
+.device-md .pricing.pricing-5 .pricing-title h3,.device-md .pricing.pricing-5 .best-price .pricing-title h3{font-size:14px}
 .device-md .pricing.pricing-5 .pricing-title span,.device-md .pricing.pricing-5 .pricing-title .page-numbers a,.page-numbers .device-md .pricing.pricing-5 .pricing-title a{font-size:12px}
 .device-md .pricing.pricing-5 .pricing-price{font-size:48px}
 .device-md .pricing.pricing-5 .pricing-price span,.device-md .pricing.pricing-5 .pricing-price .page-numbers a,.page-numbers .device-md .pricing.pricing-5 .pricing-price a{font-size:20px}
@@ -7642,7 +7532,7 @@ body:not(.sticky-responsive-menu) #primary-menu.mobile-menu-off-canvas>ul.d-bloc
 .testimonials-grid.grid-3 li{width:50%}
 .section>.testimonial{padding:0 40px !important;max-width:none}
 .promo:not(.promo-full){padding:30px 20px !important}
-.promo.promo-dark h3,.promo.promo-dark .ipost .entry-title h4,.ipost .entry-title .promo.promo-dark h4{line-height:1.6}
+.promo.promo-dark h3{line-height:1.6}
 .promo a.button{position:relative !important;top:0 !important;margin:20px 0 0 !important;left:0 !important;right:0}
 #contact-form-overlay-mini{float:none;width:auto;max-width:380px;margin:0 auto}
 .button.button-full{font-size:22px}
@@ -7679,7 +7569,7 @@ body:not(.sticky-responsive-menu) #primary-menu.mobile-menu-off-canvas>ul.d-bloc
 .container-fullwidth{margin:0 auto;padding:0 15px !important}
 h1{font-size:28px}
 h2{font-size:24px}
-h3,.ipost .entry-title h4{font-size:20px}
+h3{font-size:20px}
 h4{font-size:16px}
 .one-page-arrow{display:none !important}
 #top-bar{height:auto}
@@ -7731,7 +7621,7 @@ form .col_full,form .col_half,form .col_one_third,form .col_two_third,form .col_
 .post-masonry-full .entry{padding:40px !important}
 .product-1 .product{width:100%}
 .product-1 .product-image{float:none !important;width:100% !important;height:auto !important;margin:0 0 20px !important}
-.product-1 .product-title h3,.product-1 .product-title .ipost .entry-title h4,.ipost .entry-title .product-1 .product-title h4{font-size:19px}
+.product-1 .product-title h3{font-size:19px}
 .product-1 p{display:none}
 .pricing-box.best-price{margin-top:0}
 .pricing-box.pricing-extended .pricing-features li{width:auto;float:none}
@@ -7753,17 +7643,17 @@ h5{margin:10px 0 0 0}
 .title-block{padding:2px 0 3px 15px;border-left-width:5px}
 .title-block h1+span,.title-block .page-numbers h1+a,.page-numbers .title-block h1+a{font-size:18px}
 .title-block h2+span,.title-block .page-numbers h2+a,.page-numbers .title-block h2+a{font-size:17px}
-.title-block h3+span,.title-block .ipost .entry-title h4+span,.ipost .entry-title .title-block h4+span,.title-block .page-numbers h3+a,.page-numbers .title-block h3+a,.title-block .ipost .entry-title .page-numbers h4+a,.page-numbers .title-block .ipost .entry-title h4+a,.ipost .entry-title .title-block .page-numbers h4+a,.page-numbers .ipost .entry-title .title-block h4+a{font-size:15px}
+.title-block h3+span,.title-block .page-numbers h3+a,.page-numbers .title-block h3+a{font-size:15px}
 .title-block h4+span,.title-block .page-numbers h4+a,.page-numbers .title-block h4+a{font-size:13px}
 .title-block-right{padding:2px 15px 3px 0;border-right-width:5px}
 .heading-block h1{font-size:30px}
 .heading-block h1+span,.heading-block .page-numbers h1+a,.page-numbers .heading-block h1+a{font-size:20px}
 .heading-block h2{font-size:26px}
 .heading-block h2+span,.heading-block .page-numbers h2+a,.page-numbers .heading-block h2+a{font-size:18px}
-.heading-block h3,.heading-block .ipost .entry-title h4,.ipost .entry-title .heading-block h4{font-size:22px}
+.heading-block h3{font-size:22px}
 .heading-block h4{font-size:19px}
 .heading-block ~ p:not(.lead){font-size:15px}
-.heading-block h3+span,.heading-block .ipost .entry-title h4+span,.ipost .entry-title .heading-block h4+span,.heading-block .page-numbers h3+a,.page-numbers .heading-block h3+a,.heading-block .ipost .entry-title .page-numbers h4+a,.page-numbers .heading-block .ipost .entry-title h4+a,.ipost .entry-title .heading-block .page-numbers h4+a,.page-numbers .ipost .entry-title .heading-block h4+a,.heading-block h4+span,.heading-block .page-numbers h4+a,.page-numbers .heading-block h4+a{font-size:17px}
+.heading-block h3+span,.heading-block .page-numbers h3+a,.page-numbers .heading-block h3+a,.heading-block h4+span,.heading-block .page-numbers h4+a,.page-numbers .heading-block h4+a{font-size:17px}
 .emphasis-title h1,.emphasis-title h2{font-size:44px}
 .wedding-head{font-size:48px}
 .wedding-head .first-name,.wedding-head .last-name,.wedding-head .and{display:block;margin:0 0 15px;text-align:center}
@@ -7802,7 +7692,7 @@ h5{margin:10px 0 0 0}
 .mpost .entry-image i{height:150px;line-height:150px}
 .shop:not(.product-1){margin:0}
 .shop:not(.product-1) .product{margin:0 0 20px 0;padding:0;width:100%}
-.shop:not(.product-1) .product-title h3,.shop:not(.product-1) .product-title .ipost .entry-title h4,.ipost .entry-title .shop:not(.product-1) .product-title h4{font-size:19px}
+.shop:not(.product-1) .product-title h3{font-size:19px}
 .fslider:not(.flex-thumb-grid) .flex-control-nav.flex-control-thumbs{height:45px}
 .fslider:not(.flex-thumb-grid) .flex-control-nav.flex-control-thumbs li,.fslider:not(.flex-thumb-grid) .flex-control-nav.flex-control-thumbs li img{display:block;width:60px !important;height:45px !important}
 .si-share span,.si-share .page-numbers a,.page-numbers .si-share a{display:none}
@@ -7847,8 +7737,8 @@ pre{white-space:pre-wrap !important}
 pre,blockquote{border:1px solid #adb5bd;page-break-inside:avoid}
 thead{display:table-header-group}
 tr,img{page-break-inside:avoid}
-p,h2,h3,.ipost .entry-title h4{orphans:3;widows:3}
-h2,h3,.ipost .entry-title h4{page-break-after:avoid}
+p,h2,h3{orphans:3;widows:3}
+h2,h3{page-break-after:avoid}
 body{min-width:992px !important}
 .container{min-width:992px !important}
 .navbar{display:none}

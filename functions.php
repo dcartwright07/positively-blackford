@@ -69,31 +69,13 @@ function pb_custom_excerpt_length( $length ) {
 }
 add_filter( 'excerpt_length', 'pb_custom_excerpt_length', 999 );
 
-// Add read more link
-function pb_excerpt_more( $more ) {
+// Trim the brackets of the end of the excerpt
+function pb_trim_excerpt_brackets( $text ) {
 
-	if( ! is_single() ) {
-		$more = sprintf( ' ... <a class="read-more" href="%1$s">%2$s</a>',
-			get_permalink( get_the_ID() ),
-			__( 'Read More', 'textdomain' )
-		);
-	}
-
-	return $more;
+	return ' ...';
 
 }
-add_filter( 'excerpt_more', 'pb_excerpt_more' );
-
-// Figures out whether the excerpt is custom
-function pb_excerpt_more_manual( $excerpt ) {
-
-	if( has_excerpt( get_the_ID() ) ) {
-		$excerpt .= pb_excerpt_more( $excerpt );
-	}
-	return $excerpt;
-
-}
-add_filter( 'get_the_excerpt', 'pb_excerpt_more_manual' );
+add_filter( 'excerpt_more', 'pb_trim_excerpt_brackets' );
 
 /* #endregion */
 
