@@ -31,7 +31,7 @@ ul {
 		text-decoration: none;
 		font-weight: 400;
 		cursor: pointer;
-		border: 1px solid #ddd;
+		border: 1px solid #ccc;
 		color: #888;
 	}
 	a {
@@ -44,7 +44,7 @@ ul {
 		}
 	}
 	.current {
-		color: #000;
+		color: #fff;
 		background: $theme-color;
 		text-decoration: none;
 		&:hover {
