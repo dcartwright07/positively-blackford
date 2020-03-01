@@ -42,7 +42,7 @@ add_filter( 'upload_mimes', 'add_file_types_to_uploads' );
 function pb_theme_style() {
 
 	wp_enqueue_style( 'googlefont_css', 'https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Raleway:300,400,500,600,700|Crete+Round:400i' );
-	wp_enqueue_style( 'main_css', get_template_directory_uri() . '/style.css' );
+	wp_enqueue_style( 'main_css', get_template_directory_uri() . '/style.css?bid=' . time() );
 
 }
 add_action( 'wp_enqueue_scripts', 'pb_theme_style' );
@@ -52,7 +52,7 @@ function pb_theme_js() {
 
 	wp_enqueue_script( 'plugins_js', get_template_directory_uri() . '/assets/js/plugins.js', array( 'jquery' ), '',  true );
 	wp_enqueue_script( 'functions_js', get_template_directory_uri() . '/assets/js/functions.js', array( 'jquery' ), '',  true );
-	wp_enqueue_script( 'custom_js', get_template_directory_uri() . '/assets/js/custom.js', array( 'jquery' ), '',  true );
+	wp_enqueue_script( 'custom_js', get_template_directory_uri() . '/assets/js/custom.js?bid=' . time(), array( 'jquery' ), '',  true );
 
 }
 add_action( 'wp_enqueue_scripts', 'pb_theme_js' );
