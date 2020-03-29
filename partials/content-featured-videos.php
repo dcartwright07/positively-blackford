@@ -28,7 +28,7 @@
 				</a>
 			</div> -->
 			<div class="fluid-width-video-wrapper">
-				<iframe src="https://www.youtube.com/embed/<?php the_field( 'video_id' ); ?>" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" id="fitvid0"></iframe>
+				<iframe data-src="https://www.youtube.com/embed/<?php the_field( 'video_id' ); ?>" src="" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" id="fitvid0"></iframe>
 			</div>
 
 			<div class="entry-title">
