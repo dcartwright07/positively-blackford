@@ -60,21 +60,21 @@ function pb_theme_js() {
 add_action( 'wp_enqueue_scripts', 'pb_theme_js' );
 
 // Delay Javascript loading until after HTML is loaded
-function pb_defer_parsing_of_js( $url ) {
+// function pb_defer_parsing_of_js( $url ) {
 
-	if( FALSE === strpos( $url, '.js' ) ) {
-		return $url;
-	}
+// 	if( FALSE === strpos( $url, '.js' ) ) {
+// 		return $url;
+// 	}
 
-	// Exclude jQuery.js from the delay
-	if( strpos( $url, 'jquery.js' ) ) {
-		return $url;
-	}
+// 	// Exclude jQuery.js from the delay
+// 	if( strpos( $url, 'jquery.js' ) ) {
+// 		return $url;
+// 	}
 
-	return "$url' defer ";
+// 	return "$url' defer ";
 
-}
-add_filter( 'clean_url', 'pb_defer_parsing_of_js', 11, 1 );
+// }
+// add_filter( 'clean_url', 'pb_defer_parsing_of_js', 11, 1 );
 
 /* #endregion */
 
