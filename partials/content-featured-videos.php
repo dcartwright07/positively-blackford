@@ -7,7 +7,7 @@
 	<?php
 
 		$post_count = 1;
-		$num_posts = 2;
+		$num_posts = 10;
 		$args = array(
 			'posts_per_page' 	=> $num_posts,
 			'post_type'				=> 'video'
