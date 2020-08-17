@@ -22,7 +22,7 @@
 		</div>
 	</div>
 
-	<div class="content-wrap">
+	<div id="featured-videos" class="content-wrap">
 		<div class="container clearfix">
 			<div class="col_full nobottommargin">
 				<?php get_template_part( 'partials/content', 'featured-videos' ); ?>
