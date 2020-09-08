@@ -19,7 +19,7 @@
 					$featuredVideo = get_field( 'featured_video' );
 					if( $featuredStory == 'yes' || $featuredVideo == 'yes' ) :
 						if(get_post_type() == 'video') {
-							$imageThumbnail = 'https://img.youtube.com/vi/' . get_field( 'video_id' ) . '/maxresdefault.jpg';
+							$imageThumbnail = 'https://img.youtube.com/vi/' . get_field( 'video_id' ) . '/0.jpg';
 						} else {
 							$imageThumbnail = get_the_post_thumbnail_url($post->ID, 'post-thumbnail');
 						}
