@@ -8,18 +8,26 @@
 				if( is_front_page() ) $num_posts = 6;
 
 				$args = array(
-					'posts_per_page' => $num_posts
+					'posts_per_page' => $num_posts,
+					'post_type'	=> array('post', 'video')
 				);
 				$query =  new WP_Query( $args );
 
 				if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post();
-					$featured = get_field( 'featured_story' );
-					if( $featured == 'yes' ) :
+
+					$featuredStory = get_field( 'featured_story' );
+					$featuredVideo = get_field( 'featured_video' );
+					if( $featuredStory == 'yes' || $featuredVideo == 'yes' ) :
+						if(get_post_type() == 'video') {
+							$imageThumbnail = 'https://img.youtube.com/vi/' . get_field( 'video_id' ) . '/maxresdefault.jpg';
+						} else {
+							$imageThumbnail = get_the_post_thumbnail_url($post->ID, 'post-thumbnail');
+						}
 
 				?>
 				<div class="slide" data-thumb="<?php the_post_thumbnail_url( 'thumbnail' ); ?>">
 					<a href="<?php the_permalink(); ?>">
-						<?php the_post_thumbnail( 'post-thumbnail' ); ?>
+						<img src="<?php echo $imageThumbnail; ?>">
 						<div class="overlay">
 							<div class="text-overlay">
 								<div class="text-overlay-title">
