@@ -9,7 +9,7 @@
 				<?php pb_footer_bottom_nav(); ?>
 			</div>
 			Copyrights &copy; 2019 All Rights Reserved by Blackford Initiative.<br>
-			Developed by: <a href="http://dominiccartwright.com" target="_blank">Dominic Cartwright</a> &amp; <a href="http://kwmcgrego.com" target="_blank">Kevin McGregor</a>
+			Developed by: <a href="https://dominiccartwright.com" target="_blank">Dominic Cartwright</a>
 		</div>
 
 	</div>
